@@ -25,13 +25,16 @@ export default function RootLayout({ children }) {
             </Link>
             
             <nav className="flex items-center gap-6 text-sm font-medium text-slate-400">
-              <Link href="/tools/unit-converter" className="hover:text-blue-400 transition">
-                Unit Converter
-              </Link>
-              <Link href="/blog" className="hover:text-blue-400 transition">
-                Guides
-              </Link>
-            </nav>
+  <Link href="/tools/unit-converter" className="hover:text-blue-400 transition">
+    Unit Converter
+  </Link>
+  <Link href="/blog" className="hover:text-blue-400 transition">
+    Guides
+  </Link>
+  <Link href="/gallery" className="hover:text-blue-400 transition text-blue-500/90 font-semibold">
+    NFT Gallery
+  </Link>
+</nav>
           </div>
         </header>
 
