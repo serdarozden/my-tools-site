@@ -9,14 +9,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
-      <body className="bg-slate-950 text-slate-100 flex flex-col min-h-screen font-sans selection:bg-blue-600 selection:text-white">
+      <body className="bg-slate-950 text-slate-300 flex flex-col min-h-screen font-sans selection:bg-blue-600 selection:text-white">
         {/* Dark Header / Navbar */}
         <header className="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
             <Link 
               href="/" 
               title="Back to Home"
-              className="flex items-center gap-2 font-bold text-lg text-white tracking-tight hover:text-blue-400 transition"
+              className="flex items-center gap-2 font-bold text-lg text-slate-200 tracking-tight hover:text-blue-400 transition"
             >
               <span className="bg-blue-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-black text-sm shadow-lg shadow-blue-600/30">
                 T
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
               <span>Back to Home</span>
             </Link>
             
-            <nav className="flex items-center gap-6 text-sm font-medium text-slate-300">
+            <nav className="flex items-center gap-6 text-sm font-medium text-slate-400">
               <Link href="/tools/unit-converter" className="hover:text-blue-400 transition">
                 Unit Converter
               </Link>
@@ -41,15 +41,15 @@ export default function RootLayout({ children }) {
         </div>
 
         {/* Dark Footer */}
-        <footer className="bg-slate-900 border-t border-slate-800/80 py-8 mt-16">
-          <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <footer className="bg-slate-900 border-t border-slate-800/80 py-8 mt-16 text-slate-400">
+          <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
             <div>
               © {new Date().getFullYear()} TechTools. All rights reserved.
             </div>
             <div className="flex gap-6">
-              <Link href="/privacy" className="hover:text-white transition">Privacy Policy</Link>
-              <Link href="/terms" className="hover:text-white transition">Terms of Service</Link>
-              <Link href="/contact" className="hover:text-white transition">Contact</Link>
+              <Link href="/privacy" className="hover:text-slate-200 transition">Privacy Policy</Link>
+              <Link href="/terms" className="hover:text-slate-200 transition">Terms of Service</Link>
+              <Link href="/contact" className="hover:text-slate-200 transition">Contact</Link>
             </div>
           </div>
         </footer>
