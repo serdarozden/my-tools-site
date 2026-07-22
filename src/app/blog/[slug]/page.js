@@ -54,25 +54,31 @@ export default async function ArticleDetailPage({ params }) {
         </p>
       </header>
 
-      {/* Article Content */}
-      <article className="prose prose-invert prose-slate max-w-none text-slate-300 leading-relaxed space-y-6">
-        <p className="text-base sm:text-lg">
-          {article.content || "Welcome to this comprehensive technical guide. Precise conversions and standardizations are key to successful engineering and architectural designs."}
-        </p>
+      {/* Article Content (HTML Render Enabled) */}
+      <article 
+        className="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-4
+                   [&_h2]:text-2xl [&_h2]:font-extrabold [&_h2]:text-white [&_h2]:mt-8 [&_h2]:mb-4 [&_h2]:border-b [&_h2]:border-slate-800 [&_h2]:pb-2
+                   [&_p]:text-slate-300 [&_p]:leading-relaxed [&_p]:mb-4
+                   [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_ul]:mb-6
+                   [&_li]:text-slate-300
+                   [&_strong]:text-blue-400 [&_strong]:font-semibold
+                   [&_code]:bg-slate-800 [&_code]:text-blue-300 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded [&_code]:text-xs"
+        dangerouslySetInnerHTML={{ __html: article.content }}
+      />
 
-        <div className="p-6 bg-slate-900 border border-slate-800 rounded-2xl my-8">
-          <h3 className="text-xl font-bold text-white mb-2">Need to run quick conversions?</h3>
-          <p className="text-slate-400 text-sm mb-4">
-            Use our free universal engineering unit converter to switch between metric, imperial, pressure, and CAD measurements instantly.
-          </p>
-          <Link 
-            href="/tools/unit-converter"
-            className="inline-block bg-blue-600 text-white text-xs font-bold px-4 py-2.5 rounded-xl hover:bg-blue-500 transition shadow-md shadow-blue-600/20"
-          >
-            Open Unit Converter &rarr;
-          </Link>
-        </div>
-      </article>
+      {/* Call to Action Card */}
+      <div className="p-6 bg-slate-900 border border-slate-800 rounded-2xl my-8">
+        <h3 className="text-xl font-bold text-white mb-2">Need to run quick conversions?</h3>
+        <p className="text-slate-400 text-sm mb-4">
+          Use our free universal engineering unit converter to switch between metric, imperial, pressure, and CAD measurements instantly.
+        </p>
+        <Link 
+          href="/tools/unit-converter"
+          className="inline-block bg-blue-600 text-white text-xs font-bold px-4 py-2.5 rounded-xl hover:bg-blue-500 transition shadow-md shadow-blue-600/20"
+        >
+          Open Unit Converter &rarr;
+        </Link>
+      </div>
     </main>
   );
 }
