@@ -13,11 +13,15 @@ export default function RootLayout({ children }) {
         {/* Dark Header / Navbar */}
         <header className="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2 font-bold text-xl text-white tracking-tight hover:opacity-90 transition">
+            <Link 
+              href="/" 
+              title="Back to Home"
+              className="flex items-center gap-2 font-bold text-lg text-white tracking-tight hover:text-blue-400 transition"
+            >
               <span className="bg-blue-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-black text-sm shadow-lg shadow-blue-600/30">
                 T
               </span>
-              <span>TechTools</span>
+              <span>Back to Home</span>
             </Link>
             
             <nav className="flex items-center gap-6 text-sm font-medium text-slate-300">
