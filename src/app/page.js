@@ -37,7 +37,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Main Content Layout: Articles & Standalone Guides */}
+      {/* Main Content Layout: Featured Standalone Guides & Articles */}
       <section className="mb-16">
         <div className="flex items-center justify-between mb-8 border-b border-slate-800 pb-4">
           <div>
@@ -47,6 +47,31 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Featured Standalone CAD Formats Guide Card */}
+          <div className="p-6 border border-slate-800 rounded-2xl bg-slate-900/60 hover:border-blue-500/50 transition-all duration-200 flex flex-col justify-between group">
+            <div>
+              <div className="flex items-center gap-2 text-xs font-bold text-blue-400 mb-3">
+                <span className="bg-blue-950 border border-blue-800/60 px-2.5 py-1 rounded-md uppercase tracking-wider">CAD & Architecture</span>
+                <span className="text-slate-600">•</span>
+                <span className="text-slate-400 font-normal">7 min read</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                <Link href="/cad-3d-file-formats-guide">
+                  Understanding CAD & 3D File Formats: STL, OBJ, STEP, IGES, and FBX
+                </Link>
+              </h3>
+              <p className="text-slate-400 text-sm mb-6 leading-relaxed line-clamp-3">
+                Learn the differences between mesh and parametric CAD files. Choose the right format for 3D printing, rendering, and engineering software interoperability.
+              </p>
+            </div>
+            <Link 
+              href="/cad-3d-file-formats-guide" 
+              className="text-blue-400 text-sm font-bold hover:text-blue-300 inline-flex items-center gap-1"
+            >
+              Read Full Guide <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </Link>
+          </div>
+
           {/* Featured Standalone SEO Pressure Guide Card */}
           <div className="p-6 border border-slate-800 rounded-2xl bg-slate-900/60 hover:border-blue-500/50 transition-all duration-200 flex flex-col justify-between group">
             <div>
