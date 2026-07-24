@@ -37,7 +37,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Main Content Layout: Articles First */}
+      {/* Main Content Layout: Articles & Standalone Guides */}
       <section className="mb-16">
         <div className="flex items-center justify-between mb-8 border-b border-slate-800 pb-4">
           <div>
@@ -47,6 +47,32 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Featured Standalone SEO Pressure Guide Card */}
+          <div className="p-6 border border-slate-800 rounded-2xl bg-slate-900/60 hover:border-blue-500/50 transition-all duration-200 flex flex-col justify-between group">
+            <div>
+              <div className="flex items-center gap-2 text-xs font-bold text-blue-400 mb-3">
+                <span className="bg-blue-950 border border-blue-800/60 px-2.5 py-1 rounded-md uppercase tracking-wider">Engineering</span>
+                <span className="text-slate-600">•</span>
+                <span className="text-slate-400 font-normal">6 min read</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                <Link href="/pressure-converter-guide">
+                  Complete Pressure Unit Conversion Guide: Bar, PSI, MPa, and kPa
+                </Link>
+              </h3>
+              <p className="text-slate-400 text-sm mb-6 leading-relaxed line-clamp-3">
+                Master pressure conversions with our ultimate engineering guide. Learn exact formulas and quick reference charts to convert between Bar, PSI, MPa, and kPa instantly.
+              </p>
+            </div>
+            <Link 
+              href="/pressure-converter-guide" 
+              className="text-blue-400 text-sm font-bold hover:text-blue-300 inline-flex items-center gap-1"
+            >
+              Read Full Guide <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </Link>
+          </div>
+
+          {/* Dynamic Articles Mapping */}
           {articles.map((article) => (
             <div 
               key={article.slug} 
@@ -74,12 +100,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Interactive Utilities Section */}
+      {/* Interactive Utilities & Web3 Showcase Section */}
       <section className="mb-12">
         <div className="flex items-center justify-between mb-8 border-b border-slate-800 pb-4">
           <div>
-            <h2 className="text-2xl font-black text-white tracking-tight">Interactive Web Tools</h2>
-            <p className="text-sm text-slate-400">Free online converters and utility tools to speed up your work.</p>
+            <h2 className="text-2xl font-black text-white tracking-tight">Interactive Web Tools & Projects</h2>
+            <p className="text-sm text-slate-400">Free online converters and digital asset showcases.</p>
           </div>
         </div>
         
@@ -103,6 +129,29 @@ export default function HomePage() {
                 className="inline-flex items-center gap-2 bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-blue-500 transition-colors duration-200 shadow-lg shadow-blue-600/20"
               >
                 Open Tool &rarr;
+              </Link>
+            </div>
+          </div>
+
+          {/* NFT Showcase Card */}
+          <div className="p-8 border border-slate-800 rounded-2xl bg-slate-900/60 hover:bg-slate-900 hover:border-blue-500/50 shadow-lg transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div className="w-12 h-12 bg-blue-950 text-blue-400 border border-blue-800/50 rounded-2xl flex items-center justify-center font-bold text-xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                🎨
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                Digital Art & NFT Collections
+              </h3>
+              <p className="text-slate-400 text-sm mb-6 leading-relaxed">
+                Explore curated Web3 digital artworks and concept collections minted on Ethereum.
+              </p>
+            </div>
+            <div>
+              <Link 
+                href="/gallery" 
+                className="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 text-slate-200 text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-slate-700 transition-colors duration-200"
+              >
+                Explore Gallery &rarr;
               </Link>
             </div>
           </div>
