@@ -38,7 +38,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Main Content Layout: Featured Standalone Guides & Articles */}
+      {/* Main Content Layout: 10 Articles & Guides */}
       <section className="mb-16">
         <div className="flex items-center justify-between mb-8 border-b border-slate-700 pb-4">
           <div>
@@ -47,209 +47,42 @@ export default function HomePage() {
           </div>
         </div>
 
+        {/* 10 Yazının Tamamını Otomatik Basan Döngü */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          
-          {/* Featured AI Generative Design Guide Card */}
-          <div className="p-6 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 transition-all duration-200 flex flex-col justify-between group shadow-md">
-            <div>
-              <div className="flex items-center gap-2 text-xs font-bold text-blue-300 mb-3">
-                <span className="bg-blue-950 border border-blue-700 px-2.5 py-1 rounded-md uppercase tracking-wider">AI & Building Tech</span>
-                <span className="text-slate-400">•</span>
-                <span className="text-slate-200 font-semibold">6 min read</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-                <Link href="/ai-generative-design-in-bim-cad-guide">
-                  AI Generative Design in BIM & CAD: How Artificial Intelligence is Transforming AEC
-                </Link>
-              </h3>
-              <p className="text-slate-200 text-sm mb-6 leading-relaxed line-clamp-3">
-                Discover how AI-powered generative design is revolutionizing BIM workflows, structural optimization, and CAD drafting in modern AEC industries.
-              </p>
-            </div>
-            <Link 
-              href="/ai-generative-design-in-bim-cad-guide" 
-              className="text-blue-300 text-sm font-bold hover:text-blue-200 inline-flex items-center gap-1"
-            >
-              Read Full Guide <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-            </Link>
-          </div>
+          {articles.map((article) => {
+            const articlePath = article.isStandalone 
+              ? `/${article.slug}` 
+              : `/blog/${article.slug}`;
 
-          {/* Featured Blender vs. AutoCAD Comparison Guide Card */}
-          <div className="p-6 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 transition-all duration-200 flex flex-col justify-between group shadow-md">
-            <div>
-              <div className="flex items-center gap-2 text-xs font-bold text-blue-300 mb-3">
-                <span className="bg-blue-950 border border-blue-700 px-2.5 py-1 rounded-md uppercase tracking-wider">3D & CAD Workflows</span>
-                <span className="text-slate-400">•</span>
-                <span className="text-slate-200 font-semibold">7 min read</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-                <Link href="/blender-vs-autocad-comparison-guide">
-                  Blender vs. AutoCAD: Which Software Should You Choose for 3D & Technical Design?
-                </Link>
-              </h3>
-              <p className="text-slate-200 text-sm mb-6 leading-relaxed line-clamp-3">
-                Compare Blender and AutoCAD for 3D modeling, architectural visualization, and 2D drafting. Learn key workflow differences, file support, and software strengths.
-              </p>
-            </div>
-            <Link 
-              href="/blender-vs-autocad-comparison-guide" 
-              className="text-blue-300 text-sm font-bold hover:text-blue-200 inline-flex items-center gap-1"
-            >
-              Read Full Guide <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-            </Link>
-          </div>
-
-          {/* Featured iDECAD vs. AutoCAD Guide Card */}
-          <div className="p-6 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 transition-all duration-200 flex flex-col justify-between group shadow-md">
-            <div>
-              <div className="flex items-center gap-2 text-xs font-bold text-blue-300 mb-3">
-                <span className="bg-blue-950 border border-blue-700 px-2.5 py-1 rounded-md uppercase tracking-wider">CAD & Architecture</span>
-                <span className="text-slate-400">•</span>
-                <span className="text-slate-200 font-semibold">8 min read</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-                <Link href="/idecad-vs-autocad-comparison-guide">
-                  iDECAD vs. AutoCAD: Which Software Should Engineers & Architects Choose?
-                </Link>
-              </h3>
-              <p className="text-slate-200 text-sm mb-6 leading-relaxed line-clamp-3">
-                Compare iDECAD and AutoCAD for structural engineering and architectural drafting. Learn key differences in BIM workflow, FEA analysis, and 2D drafting.
-              </p>
-            </div>
-            <Link 
-              href="/idecad-vs-autocad-comparison-guide" 
-              className="text-blue-300 text-sm font-bold hover:text-blue-200 inline-flex items-center gap-1"
-            >
-              Read Full Guide <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-            </Link>
-          </div>
-
-          {/* Featured Blender to Unreal Engine 5 Export Guide Card */}
-          <div className="p-6 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 transition-all duration-200 flex flex-col justify-between group shadow-md">
-            <div>
-              <div className="flex items-center gap-2 text-xs font-bold text-blue-300 mb-3">
-                <span className="bg-blue-950 border border-blue-700 px-2.5 py-1 rounded-md uppercase tracking-wider">3D & Game Dev</span>
-                <span className="text-slate-400">•</span>
-                <span className="text-slate-200 font-semibold">6 min read</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-                <Link href="/blender-to-unreal-engine-export-guide">
-                  How to Export 3D Models from Blender to Unreal Engine 5 (FBX & GLTF Best Practices)
-                </Link>
-              </h3>
-              <p className="text-slate-200 text-sm mb-6 leading-relaxed line-clamp-3">
-                Master the asset pipeline between Blender and UE5. Learn how to fix scale issues, axis orientation, UV mapping, and material export bugs.
-              </p>
-            </div>
-            <Link 
-              href="/blender-to-unreal-engine-export-guide" 
-              className="text-blue-300 text-sm font-bold hover:text-blue-200 inline-flex items-center gap-1"
-            >
-              Read Full Guide <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-            </Link>
-          </div>
-
-          {/* Featured Standalone CAD Formats Guide Card */}
-          <div className="p-6 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 transition-all duration-200 flex flex-col justify-between group shadow-md">
-            <div>
-              <div className="flex items-center gap-2 text-xs font-bold text-blue-300 mb-3">
-                <span className="bg-blue-950 border border-blue-700 px-2.5 py-1 rounded-md uppercase tracking-wider">CAD & Architecture</span>
-                <span className="text-slate-400">•</span>
-                <span className="text-slate-200 font-semibold">7 min read</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-                <Link href="/cad-3d-file-formats-guide">
-                  Understanding CAD & 3D File Formats: STL, OBJ, STEP, IGES, and FBX
-                </Link>
-              </h3>
-              <p className="text-slate-200 text-sm mb-6 leading-relaxed line-clamp-3">
-                Learn the differences between mesh and parametric CAD files. Choose the right format for 3D printing, rendering, and engineering software interoperability.
-              </p>
-            </div>
-            <Link 
-              href="/cad-3d-file-formats-guide" 
-              className="text-blue-300 text-sm font-bold hover:text-blue-200 inline-flex items-center gap-1"
-            >
-              Read Full Guide <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-            </Link>
-          </div>
-
-          {/* Featured Standalone SEO Pressure Guide Card */}
-          <div className="p-6 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 transition-all duration-200 flex flex-col justify-between group shadow-md">
-            <div>
-              <div className="flex items-center gap-2 text-xs font-bold text-blue-300 mb-3">
-                <span className="bg-blue-950 border border-blue-700 px-2.5 py-1 rounded-md uppercase tracking-wider">Engineering</span>
-                <span className="text-slate-400">•</span>
-                <span className="text-slate-200 font-semibold">6 min read</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-                <Link href="/pressure-converter-guide">
-                  Complete Pressure Unit Conversion Guide: Bar, PSI, MPa, and kPa
-                </Link>
-              </h3>
-              <p className="text-slate-200 text-sm mb-6 leading-relaxed line-clamp-3">
-                Master pressure conversions with our ultimate engineering guide. Learn exact formulas and quick reference charts to convert between Bar, PSI, MPa, and kPa instantly.
-              </p>
-            </div>
-            <Link 
-              href="/pressure-converter-guide" 
-              className="text-blue-300 text-sm font-bold hover:text-blue-200 inline-flex items-center gap-1"
-            >
-              Read Full Guide <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-            </Link>
-          </div>
-
-          {/* Featured Standalone SEO Web3 & NFT Guide Card */}
-          <div className="p-6 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 transition-all duration-200 flex flex-col justify-between group shadow-md">
-            <div>
-              <div className="flex items-center gap-2 text-xs font-bold text-blue-300 mb-3">
-                <span className="bg-blue-950 border border-blue-700 px-2.5 py-1 rounded-md uppercase tracking-wider">Web3 & Art</span>
-                <span className="text-slate-400">•</span>
-                <span className="text-slate-200 font-semibold">5 min read</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-                <Link href="/nft-digital-art-guide">
-                  What is Web3 Digital Art? A Complete Guide to Collecting NFTs
-                </Link>
-              </h3>
-              <p className="text-slate-200 text-sm mb-6 leading-relaxed line-clamp-3">
-                Discover how blockchain technology transforms digital creativity, how on-chain provenance works, and what to look for when collecting NFTs on OpenSea.
-              </p>
-            </div>
-            <Link 
-              href="/nft-digital-art-guide" 
-              className="text-blue-300 text-sm font-bold hover:text-blue-200 inline-flex items-center gap-1"
-            >
-              Read Full Guide <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-            </Link>
-          </div>
-
-          {/* Dynamic Articles Mapping */}
-          {articles.map((article) => (
-            <div 
-              key={article.slug} 
-              className="p-6 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 transition-all duration-200 flex flex-col justify-between group shadow-md"
-            >
-              <div>
-                <div className="flex items-center gap-2 text-xs font-bold text-blue-300 mb-3">
-                  <span className="bg-blue-950 border border-blue-700 px-2.5 py-1 rounded-md uppercase tracking-wider">{article.category}</span>
-                  <span className="text-slate-400">•</span>
-                  <span className="text-slate-200 font-semibold">{article.readTime}</span>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-                  <Link href={`/blog/${article.slug}`}>{article.title}</Link>
-                </h3>
-                <p className="text-slate-200 text-sm mb-6 leading-relaxed line-clamp-3">{article.description}</p>
-              </div>
-              <Link 
-                href={`/blog/${article.slug}`} 
-                className="text-blue-300 text-sm font-bold hover:text-blue-200 inline-flex items-center gap-1"
+            return (
+              <div 
+                key={article.slug} 
+                className="p-6 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 transition-all duration-200 flex flex-col justify-between group shadow-md"
               >
-                Read Full Article <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-              </Link>
-            </div>
-          ))}
-
+                <div>
+                  <div className="flex items-center gap-2 text-xs font-bold text-blue-300 mb-3">
+                    <span className="bg-blue-950 border border-blue-700 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                      {article.category}
+                    </span>
+                    <span className="text-slate-400">•</span>
+                    <span className="text-slate-200 font-semibold">{article.readTime}</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
+                    <Link href={articlePath}>{article.title}</Link>
+                  </h3>
+                  <p className="text-slate-200 text-sm mb-6 leading-relaxed line-clamp-3">
+                    {article.description}
+                  </p>
+                </div>
+                <Link 
+                  href={articlePath} 
+                  className="text-blue-300 text-sm font-bold hover:text-blue-200 inline-flex items-center gap-1"
+                >
+                  Read Full Guide <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                </Link>
+              </div>
+            );
+          })}
         </div>
       </section>
 
