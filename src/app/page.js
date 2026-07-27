@@ -2,6 +2,9 @@ import Link from 'next/link';
 import { articles } from '@/data/articles';
 
 export default function HomePage() {
+  // Sadece en son eklenen ilk 10 yazıyı al
+  const latestArticles = articles.slice(0, 10);
+
   return (
     <main className="max-w-6xl mx-auto px-4 py-8 sm:py-12">
       {/* Hero Section */}
@@ -33,17 +36,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Dynamic Articles Grid */}
+      {/* Dynamic Articles Grid (Latest 10 Articles) */}
       <section className="mb-16">
         <div className="flex items-center justify-between mb-8 border-b border-slate-700 pb-4">
           <div>
             <h2 className="text-2xl font-black text-white tracking-tight">Latest Articles & Technical Guides</h2>
             <p className="text-sm font-medium text-slate-200">In-depth reads, industry standards, and step-by-step tutorials.</p>
           </div>
+          <Link 
+            href="/blog" 
+            className="text-blue-400 text-sm font-bold hover:underline hidden sm:inline-block"
+          >
+            View All Articles &rarr;
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {articles.map((article) => (
+          {latestArticles.map((article) => (
             <div 
               key={article.slug} 
               className="p-6 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 transition-all duration-200 flex flex-col justify-between group shadow-md"
@@ -67,6 +76,16 @@ export default function HomePage() {
               </Link>
             </div>
           ))}
+        </div>
+
+        {/* Mobile View All Button */}
+        <div className="mt-8 text-center sm:hidden">
+          <Link 
+            href="/blog" 
+            className="inline-block bg-slate-800 border border-slate-600 text-white text-sm font-bold px-6 py-3 rounded-xl hover:bg-slate-700 transition"
+          >
+            View All Articles &rarr;
+          </Link>
         </div>
       </section>
 
