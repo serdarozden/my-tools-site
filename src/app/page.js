@@ -4,30 +4,25 @@ import { articles } from '@/data/articles';
 export default function HomePage() {
   return (
     <main className="max-w-6xl mx-auto px-4 py-8 sm:py-12">
-      {/* Dynamic Digital Portal Hero */}
+      {/* Hero Section */}
       <section className="relative overflow-hidden text-center py-20 px-6 bg-slate-900 border border-slate-700 rounded-3xl mb-16 shadow-2xl">
-        {/* Glow Effects & Grid Background */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#334155_1px,transparent_1px),linear-gradient(to_bottom,#334155_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-40"></div>
         <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-blue-600/30 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="relative z-10 max-w-3xl mx-auto">
-          {/* Badge */}
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-300 bg-blue-950 border border-blue-700 px-4 py-1.5 rounded-full mb-6 shadow-md">
             <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
             Tech, Engineering & Digital Insights
           </div>
 
-          {/* Heading */}
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight text-white">
             Insights, Guides & Technical Resources
           </h1>
 
-          {/* Subtitle */}
           <p className="text-base sm:text-lg text-slate-100 max-w-2xl mx-auto leading-relaxed mb-8 font-medium">
-            Exploring modern technology, architectural drafting, digital workflows, and practical engineering tools for creators and professionals.
+            Exploring modern technology, architectural drafting, digital workflows, and practical engineering tools.
           </p>
 
-          {/* Portal Categories Badges */}
           <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-bold text-white max-w-xl mx-auto">
             <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">📚 Technical Articles</span>
             <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">🏗️ CAD & Architecture</span>
@@ -38,7 +33,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Main Content Layout: 10 Articles & Guides */}
+      {/* Dynamic Articles Grid */}
       <section className="mb-16">
         <div className="flex items-center justify-between mb-8 border-b border-slate-700 pb-4">
           <div>
@@ -47,46 +42,35 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* 10 Yazının Tamamını Otomatik Basan Döngü */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {articles.map((article) => {
-            const articlePath = article.isStandalone 
-              ? `/${article.slug}` 
-              : `/blog/${article.slug}`;
-
-            return (
-              <div 
-                key={article.slug} 
-                className="p-6 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 transition-all duration-200 flex flex-col justify-between group shadow-md"
-              >
-                <div>
-                  <div className="flex items-center gap-2 text-xs font-bold text-blue-300 mb-3">
-                    <span className="bg-blue-950 border border-blue-700 px-2.5 py-1 rounded-md uppercase tracking-wider">
-                      {article.category}
-                    </span>
-                    <span className="text-slate-400">•</span>
-                    <span className="text-slate-200 font-semibold">{article.readTime}</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-                    <Link href={articlePath}>{article.title}</Link>
-                  </h3>
-                  <p className="text-slate-200 text-sm mb-6 leading-relaxed line-clamp-3">
-                    {article.description}
-                  </p>
+          {articles.map((article) => (
+            <div 
+              key={article.slug} 
+              className="p-6 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 transition-all duration-200 flex flex-col justify-between group shadow-md"
+            >
+              <div>
+                <div className="flex items-center gap-2 text-xs font-bold text-blue-300 mb-3">
+                  <span className="bg-blue-950 border border-blue-700 px-2.5 py-1 rounded-md uppercase tracking-wider">{article.category}</span>
+                  <span className="text-slate-400">•</span>
+                  <span className="text-slate-200 font-semibold">{article.readTime}</span>
                 </div>
-                <Link 
-                  href={articlePath} 
-                  className="text-blue-300 text-sm font-bold hover:text-blue-200 inline-flex items-center gap-1"
-                >
-                  Read Full Guide <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-                </Link>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
+                  <Link href={article.path}>{article.title}</Link>
+                </h3>
+                <p className="text-slate-200 text-sm mb-6 leading-relaxed line-clamp-3">{article.description}</p>
               </div>
-            );
-          })}
+              <Link 
+                href={article.path} 
+                className="text-blue-300 text-sm font-bold hover:text-blue-200 inline-flex items-center gap-1"
+              >
+                Read Full Article <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+              </Link>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Interactive Utilities & Web3 Showcase Section */}
+      {/* Interactive Tools Section */}
       <section className="mb-12">
         <div className="flex items-center justify-between mb-8 border-b border-slate-700 pb-4">
           <div>
@@ -96,7 +80,6 @@ export default function HomePage() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Tool Card */}
           <div className="p-8 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 shadow-lg transition-all duration-300 flex flex-col justify-between group">
             <div>
               <div className="w-12 h-12 bg-blue-950 text-blue-300 border border-blue-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
@@ -119,7 +102,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* NFT Showcase Card */}
           <div className="p-8 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 shadow-lg transition-all duration-300 flex flex-col justify-between group">
             <div>
               <div className="w-12 h-12 bg-blue-950 text-blue-300 border border-blue-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">

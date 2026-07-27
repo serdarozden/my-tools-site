@@ -1,176 +1,189 @@
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'How to Export 3D Models from Blender to Unreal Engine 5 (FBX & GLTF Best Practices)',
-  description: 'Master the asset pipeline between Blender and Unreal Engine 5. Learn how to fix scale issues, axis orientation, UV mapping, and material export bugs.',
-};
-
-export default function BlenderToUnrealGuide() {
+export default function BlenderToUe5ExportGuidePage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12 text-slate-800">
-      {/* Back Link */}
-      <div className="mb-8">
-        <Link 
-          href="/" 
-          className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-800 transition"
-        >
-          &larr; Back to Home
-        </Link>
-      </div>
-
-      {/* Article Header */}
-      <header className="mb-10 pb-8 border-b border-slate-200">
-        <div className="flex items-center gap-3 text-xs font-bold text-blue-600 mb-4">
-          <span className="bg-blue-50 border border-blue-200 px-3 py-1 rounded-md uppercase tracking-wider text-blue-700">
-            3D & Game Dev Workflow
-          </span>
-          <span className="text-slate-300">•</span>
-          <span className="text-slate-500 font-medium">6 min read</span>
-        </div>
-
-        <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight mb-6 leading-tight">
-          How to Properly Export 3D Models from Blender to Unreal Engine 5
-        </h1>
-
-        <p className="text-lg text-slate-600 leading-relaxed font-normal">
-          Transferring 3D assets from Blender to Unreal Engine 5 (UE5) often leads to common pipeline headaches: incorrect model scale, flipped bone axes, missing textures, or broken collisions. This guide covers the industry-standard FBX settings and best practices to ensure seamless asset integration into UE5.
-        </p>
-      </header>
-
-      {/* Article Body */}
-      <article className="text-slate-700 leading-relaxed space-y-8 text-base">
+    <div className="bg-black min-h-screen text-slate-100">
+      <article className="max-w-4xl mx-auto px-4 py-8 sm:py-12">
         
-        {/* Step 1: Scale & Units */}
-        <section className="bg-slate-50 border border-slate-200 p-6 rounded-2xl">
-          <h2 className="text-xl font-bold text-slate-900 mb-3">1. Scene Unit & Scale Calibration</h2>
-          <p className="mb-4 text-slate-700">
-            Unreal Engine uses <strong className="text-slate-900 font-bold bg-slate-200/70 px-1.5 py-0.5 rounded border border-slate-300">Centimeters</strong> as its default length unit, whereas Blender defaults to <strong className="text-slate-900 font-bold bg-slate-200/70 px-1.5 py-0.5 rounded border border-slate-300">Meters</strong>.
-          </p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              Go to Blender&apos;s <strong className="text-slate-900 font-bold">Scene Properties &gt; Units</strong>.
-            </li>
-            <li>
-              Set <strong className="text-slate-900 font-bold">Unit Scale to 0.01</strong> if working strictly in UE centimeters, OR keep Unit Scale at 1.0 and apply <strong className="text-slate-900 font-bold">Transform Scaling (Ctrl + A &gt; Apply All Transforms)</strong> prior to exporting.
-            </li>
-            <li>
-              <span className="text-red-600 font-bold">Crucial:</span> Always make sure your mesh origin is set to <code className="text-blue-700 bg-slate-100 border border-slate-300 px-1.5 py-0.5 rounded font-mono font-bold">(0, 0, 0)</code> world space before export.
-            </li>
-          </ul>
-        </section>
+        {/* Üst Navigasyon / Geri Dön Butonu */}
+        <nav className="mb-8">
+          <Link 
+            href="/blog" 
+            className="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition-colors"
+          >
+            <span>&larr;</span> Back to Blog
+          </Link>
+        </nav>
 
-        {/* Step 2: Axis Orientation */}
-        <section>
-          <h2 className="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-200 pb-2">
-            2. Fixing Forward & Up Axis Discrepancies
-          </h2>
-          <p className="mb-4">
-            Blender operates on a <strong className="text-slate-900 font-bold">Z-Up, Right-Handed</strong> coordinate system, while Unreal Engine uses a <strong className="text-slate-900 font-bold">Z-Up, Left-Handed</strong> coordinate system.
-          </p>
-          <p className="mb-4">
-            When exporting an FBX file from Blender, configure the transform settings as follows:
-          </p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li><strong className="text-slate-900 font-bold">Forward Axis:</strong> -Z Forward (or Y Forward depending on your asset direction)</li>
-            <li><strong className="text-slate-900 font-bold">Up Axis:</strong> Z Up</li>
-            <li>Check the option <strong className="text-slate-900 font-bold">&quot;Apply Transform&quot;</strong> in the FBX Export dialogue to prevent unexpected rotation offsets upon importing to UE5.</li>
-          </ul>
-        </section>
+        {/* Başlık ve Meta Bilgileri */}
+        <header className="mb-10 pb-8 border-b border-zinc-800">
+          <div className="flex items-center gap-3 text-xs font-bold text-blue-400 mb-4">
+            <span className="bg-zinc-900 border border-zinc-700 px-3 py-1 rounded-md uppercase tracking-wider text-blue-400">
+              3D & Game Dev
+            </span>
+            <span className="text-zinc-600">•</span>
+            <span className="text-slate-200 font-semibold">6 min read</span>
+          </div>
 
-        {/* Step 3: Geometry & Smoothing */}
-        <section>
-          <h2 className="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-200 pb-2">
-            3. Geometry Smoothing & Custom Normals
-          </h2>
-          <p className="mb-4">
-            Unreal Engine will display &quot;No Smoothing Group Information&quot; warnings if geometry export settings are misconfigured.
-          </p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              In Blender&apos;s FBX Export panel, expand the <strong className="text-slate-900 font-bold">Geometry</strong> tab.
-            </li>
-            <li>
-              Change <strong className="text-slate-900 font-bold">Smoothing</strong> from <em>Normals Only</em> to <strong className="text-slate-900 font-bold">Face</strong> or <strong className="text-slate-900 font-bold">Edge</strong>.
-            </li>
-            <li>
-              Ensure <strong className="text-slate-900 font-bold">&quot;Apply Modifiers&quot;</strong> is checked so Subdivision Surface or Bevel modifiers bake directly into the static mesh.
-            </li>
-          </ul>
-        </section>
+          <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight mb-6 leading-tight">
+            How to Properly Export 3D Models from Blender to Unreal Engine 5
+          </h1>
 
-        {/* Step 4: Materials & Textures */}
-        <section>
-          <h2 className="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-200 pb-2">
-            4. Material Maps & PBR Texture Export
-          </h2>
-          <p className="mb-4">
-            Blender&apos;s complex procedural shader nodes (like ColorRamp or Noise Texture) do <strong className="text-slate-900 font-bold">not</strong> translate directly into FBX format.
+          <p className="text-lg sm:text-xl text-slate-100 leading-relaxed font-normal">
+            Transferring 3D assets from Blender to Unreal Engine 5 (UE5) often leads to common pipeline headaches: incorrect model scale, flipped bone axes, missing textures, or broken collisions. This guide covers the industry-standard FBX settings and best practices to ensure seamless asset integration into UE5.
           </p>
-          <p>
-            To ensure materials import correctly into Unreal Engine 5, use simple <strong className="text-slate-900 font-bold">Principled BSDF</strong> nodes connected directly to image texture files (Base Color, Normal, Roughness), or bake procedural nodes into image maps before exporting.
-          </p>
-        </section>
+        </header>
 
-        {/* Recommended Export Settings Table */}
-        <section className="my-10 overflow-x-auto">
-          <h2 className="text-2xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2">
-            FBX Export Preset Summary for UE5
-          </h2>
-          <table className="w-full text-left text-sm text-slate-800 border-collapse border border-slate-200">
-            <thead>
-              <tr className="bg-slate-100 text-slate-900 border-b border-slate-200">
-                <th className="p-3 border-r border-slate-200 font-bold">Setting Option</th>
-                <th className="p-3 border-r border-slate-200 font-bold">Recommended Value</th>
-                <th className="p-3 font-bold">Purpose</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border-b border-slate-200 bg-white">
-                <td className="p-3 font-bold text-slate-900 border-r border-slate-200">Selected Objects</td>
-                <td className="p-3 border-r border-slate-200 font-bold text-emerald-700">Checked</td>
-                <td className="p-3">Prevents exporting cameras, lights, and unwanted meshes.</td>
-              </tr>
-              <tr className="border-b border-slate-200 bg-slate-50">
-                <td className="p-3 font-bold text-slate-900 border-r border-slate-200">Object Types</td>
-                <td className="p-3 border-r border-slate-200 font-semibold">Mesh (Armature if rigged)</td>
-                <td className="p-3">Isolates 3D geometric data.</td>
-              </tr>
-              <tr className="border-b border-slate-200 bg-white">
-                <td className="p-3 font-bold text-slate-900 border-r border-slate-200">Scale</td>
-                <td className="p-3 border-r border-slate-200 font-semibold">1.0 / All Local</td>
-                <td className="p-3">Maintains 1:1 scale matching UE centimeters.</td>
-              </tr>
-              <tr className="border-b border-slate-200 bg-slate-50">
-                <td className="p-3 font-bold text-slate-900 border-r border-slate-200">Smoothing</td>
-                <td className="p-3 border-r border-slate-200 font-semibold text-blue-700">Face / Edge</td>
-                <td className="p-3">Eliminates normal import warnings in UE5.</td>
-              </tr>
-              <tr className="bg-white">
-                <td className="p-3 font-bold text-slate-900 border-r border-slate-200">Add Leaf Bones</td>
-                <td className="p-3 border-r border-slate-200 font-bold text-red-600">Unchecked</td>
-                <td className="p-3">Prevents extra unnecessary bone tips in rigged skeletons.</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+        {/* Ana İçerik Alanı */}
+        <div className="space-y-10 text-slate-200 leading-relaxed text-base sm:text-lg">
+          
+          {/* 1. Scene Unit & Scale Calibration */}
+          <section className="space-y-4">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight border-b border-zinc-800 pb-2">
+              1. Scene Unit & Scale Calibration
+            </h2>
+            <p className="text-slate-100">
+              Unreal Engine uses Centimeters as its default length unit, whereas Blender defaults to Meters.
+            </p>
+            
+            <ul className="space-y-3 my-4 pl-4 border-l-2 border-blue-500">
+              <li className="text-slate-100">
+                Go to Blender's <strong className="text-white font-bold">Scene Properties &gt; Units</strong>.
+              </li>
+              <li className="text-slate-100">
+                Set Unit Scale to <strong className="text-white font-bold">0.01</strong> if working strictly in UE centimeters, OR keep Unit Scale at <strong className="text-white font-bold">1.0</strong> and apply Transform Scaling (<code className="bg-zinc-900 text-blue-400 border border-zinc-700 px-2 py-0.5 rounded text-sm font-mono">Ctrl + A &gt; Apply All Transforms</code>) prior to exporting.
+              </li>
+            </ul>
 
-      </article>
+            <div className="p-4 rounded-xl bg-zinc-950 border border-zinc-800 my-4">
+              <p className="text-sm font-medium text-slate-100">
+                <strong className="text-blue-400 font-bold uppercase tracking-wide mr-2">Crucial:</strong> 
+                Always make sure your mesh origin is set to <code className="text-blue-400 font-mono">(0, 0, 0)</code> world space before export.
+              </p>
+            </div>
+          </section>
 
-      {/* Call to Action Card */}
-      <div className="p-6 bg-slate-50 border border-slate-200 rounded-2xl my-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
-        <div>
-          <h3 className="text-xl font-bold text-slate-900 mb-2">Explore CAD & 3D Formats</h3>
-          <p className="text-slate-600 text-sm font-medium">
-            Learn more about the technical differences between STEP, IGES, STL, and FBX file extensions.
-          </p>
+          {/* 2. Fixing Forward & Up Axis Discrepancies */}
+          <section className="space-y-4">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight border-b border-zinc-800 pb-2">
+              2. Fixing Forward & Up Axis Discrepancies
+            </h2>
+            <p className="text-slate-100">
+              Blender operates on a Z-Up, Right-Handed coordinate system, while Unreal Engine uses a Z-Up, Left-Handed coordinate system.
+            </p>
+            <p className="text-slate-100">
+              When exporting an FBX file from Blender, configure the transform settings as follows:
+            </p>
+
+            <ul className="space-y-2 my-4 pl-4 border-l-2 border-blue-500 font-mono text-sm sm:text-base text-slate-100">
+              <li><strong className="text-white font-bold font-sans">Forward Axis:</strong> -Z Forward (or Y Forward depending on your asset direction)</li>
+              <li><strong className="text-white font-bold font-sans">Up Axis:</strong> Z Up</li>
+            </ul>
+
+            <p className="text-slate-100">
+              Check the option <strong className="text-white font-bold">"Apply Transform"</strong> in the FBX Export dialogue to prevent unexpected rotation offsets upon importing to UE5.
+            </p>
+          </section>
+
+          {/* 3. Geometry Smoothing & Custom Normals */}
+          <section className="space-y-4">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight border-b border-zinc-800 pb-2">
+              3. Geometry Smoothing & Custom Normals
+            </h2>
+            <p className="text-slate-100">
+              Unreal Engine will display "No Smoothing Group Information" warnings if geometry export settings are misconfigured.
+            </p>
+
+            <ul className="space-y-3 my-4 pl-4 border-l-2 border-blue-500">
+              <li className="text-slate-100">
+                In Blender's FBX Export panel, expand the <strong className="text-white font-bold">Geometry</strong> tab.
+              </li>
+              <li className="text-slate-100">
+                Change Smoothing from <strong className="text-white font-bold">Normals Only</strong> to <strong className="text-white font-bold">Face</strong> or <strong className="text-white font-bold">Edge</strong>.
+              </li>
+              <li className="text-slate-100">
+                Ensure <strong className="text-white font-bold">"Apply Modifiers"</strong> is checked so Subdivision Surface or Bevel modifiers bake directly into the static mesh.
+              </li>
+            </ul>
+          </section>
+
+          {/* 4. Material Maps & PBR Texture Export */}
+          <section className="space-y-4">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight border-b border-zinc-800 pb-2">
+              4. Material Maps & PBR Texture Export
+            </h2>
+            <p className="text-slate-100">
+              Blender's complex procedural shader nodes (like ColorRamp or Noise Texture) do not translate directly into FBX format.
+            </p>
+            <p className="text-slate-100">
+              To ensure materials import correctly into Unreal Engine 5, use simple <strong className="text-white font-bold">Principled BSDF</strong> nodes connected directly to image texture files (Base Color, Normal, Roughness), or bake procedural nodes into image maps before exporting.
+            </p>
+          </section>
+
+          {/* FBX Export Preset Summary Tablosu */}
+          <section className="space-y-4 pt-4">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight border-b border-zinc-800 pb-2">
+              FBX Export Preset Summary for UE5
+            </h2>
+            
+            <div className="overflow-x-auto rounded-xl border border-zinc-800 bg-zinc-950 my-6">
+              <table className="w-full text-left text-sm text-slate-200">
+                <thead className="bg-zinc-900 text-white font-bold border-b border-zinc-800">
+                  <tr>
+                    <th className="p-4">Setting Option</th>
+                    <th className="p-4">Recommended Value</th>
+                    <th className="p-4">Purpose</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-zinc-800">
+                  <tr className="hover:bg-zinc-900/50 transition-colors">
+                    <td className="p-4 font-bold text-white">Selected Objects</td>
+                    <td className="p-4 text-blue-400 font-semibold">Checked</td>
+                    <td className="p-4 text-slate-200">Prevents exporting cameras, lights, and unwanted meshes.</td>
+                  </tr>
+                  <tr className="hover:bg-zinc-900/50 transition-colors">
+                    <td className="p-4 font-bold text-white">Object Types</td>
+                    <td className="p-4 text-blue-400 font-semibold">Mesh (Armature if rigged)</td>
+                    <td className="p-4 text-slate-200">Isolates 3D geometric data.</td>
+                  </tr>
+                  <tr className="hover:bg-zinc-900/50 transition-colors">
+                    <td className="p-4 font-bold text-white">Scale</td>
+                    <td className="p-4 text-blue-400 font-semibold">1.0 / All Local</td>
+                    <td className="p-4 text-slate-200">Maintains 1:1 scale matching UE centimeters.</td>
+                  </tr>
+                  <tr className="hover:bg-zinc-900/50 transition-colors">
+                    <td className="p-4 font-bold text-white">Smoothing</td>
+                    <td className="p-4 text-blue-400 font-semibold">Face / Edge</td>
+                    <td className="p-4 text-slate-200">Eliminates normal import warnings in UE5.</td>
+                  </tr>
+                  <tr className="hover:bg-zinc-900/50 transition-colors">
+                    <td className="p-4 font-bold text-white">Add Leaf Bones</td>
+                    <td className="p-4 text-blue-400 font-semibold">Unchecked</td>
+                    <td className="p-4 text-slate-200">Prevents extra unnecessary bone tips in rigged skeletons.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          {/* Diğer Makalelere Yönlendirme Kartı */}
+          <div className="p-6 sm:p-8 rounded-2xl bg-zinc-900 border border-zinc-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 my-10 shadow-2xl">
+            <div className="space-y-1">
+              <h4 className="text-lg font-bold text-white">Exploring CAD & 3D Formats?</h4>
+              <p className="text-sm text-slate-200">
+                Check out our comprehensive guide on STL, OBJ, STEP, IGES, and FBX file formats.
+              </p>
+            </div>
+            <Link 
+              href="/blog/cad-and-3d-file-formats-guide" 
+              className="whitespace-nowrap px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm transition-colors shadow-lg shadow-blue-600/30"
+            >
+              Read Guide &rarr;
+            </Link>
+          </div>
+
         </div>
-        <Link 
-          href="/cad-3d-file-formats-guide"
-          className="bg-blue-600 text-white text-xs font-bold px-5 py-3 rounded-xl hover:bg-blue-700 transition shadow-md whitespace-nowrap"
-        >
-          View CAD Formats Guide &rarr;
-        </Link>
-      </div>
-    </main>
+      </article>
+    </div>
   );
 }
