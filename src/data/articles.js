@@ -1,5 +1,13 @@
 export const articles = [
   {
+    slug: 'ai-in-structural-engineering-future-trends',
+    path: '/ai-in-structural-engineering-future-trends',
+    title: 'AI in Structural Engineering: Future Trends in CAD & BIM Workflows',
+    description: 'Discover how artificial intelligence is reshaping structural engineering, automated load calculations, and BIM workflows in modern architecture.',
+    category: 'CAD & Architecture',
+    readTime: '7 min read'
+  },
+  {
     slug: 'ai-generative-design-in-bim-cad-guide',
     path: '/ai-generative-design-in-bim-cad-guide',
     title: 'AI Generative Design in BIM & CAD: How Artificial Intelligence is Transforming AEC',
