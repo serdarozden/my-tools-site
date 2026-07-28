@@ -1,5 +1,21 @@
 export const articles = [
+ {
+    slug: 'blender-to-unreal-nanite-lumen-guide',
+    path: '/blender-to-unreal-nanite-lumen-guide',
+    title: 'Blender to Unreal Engine 5: Optimizing Assets for Nanite & Lumen',
+    description: 'Master 3D modeling, high-poly geometry, UV lightmaps, and material setup in Blender optimized specifically for Unreal Engine 5 Nanite and Lumen pipelines.',
+    category: '3D & Game Dev',
+    readTime: '8 min read'
+  },
   {
+    slug: 'blender-to-unity-export-guide',
+    path: '/blender-to-unity-export-guide',
+    title: 'Blender to Unity Export Optimization Guide: Scale, FBX & Prefabs',
+    description: 'Master exporting 3D assets from Blender to Unity without scaling errors, broken materials, or flipped normals. Complete pipeline for game developers.',
+    category: '3D & Game Dev',
+    readTime: '7 min read'
+  },
+   {
     slug: 'ai-engineering-hype-vs-reality',
     path: '/ai-engineering-hype-vs-reality',
     title: 'AI in Engineering & Architecture: Hype vs. Reality in CAD Workflows',
