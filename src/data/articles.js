@@ -1,5 +1,13 @@
 export const articles = [
   {
+    slug: 'ai-engineering-hype-vs-reality',
+    path: '/ai-engineering-hype-vs-reality',
+    title: 'AI in Engineering & Architecture: Hype vs. Reality in CAD Workflows',
+    description: 'An honest look at artificial intelligence in CAD, BIM, and structural engineering. Separate AI hype from practical engineering tools and workflow automation.',
+    category: 'CAD & Architecture',
+    readTime: '6 min read'
+  },
+  {
     slug: 'ai-in-structural-engineering-future-trends',
     path: '/ai-in-structural-engineering-future-trends',
     title: 'AI in Structural Engineering: Future Trends in CAD & BIM Workflows',
