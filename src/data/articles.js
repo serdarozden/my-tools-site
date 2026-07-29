@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: '3d-file-formats-fbx-obj-gltf-guide',
+    path: '/3d-file-formats-fbx-obj-gltf-guide',
+    title: 'FBX vs OBJ vs glTF: Choosing the Right 3D File Format',
+    description: 'Complete comparison of FBX, OBJ, and glTF/GLB 3D formats. Learn which file format to use for game engines, web 3D, rigging, and 3D printing.',
+    category: '3D Formats & Pipelines',
+    readTime: '6 min read'
+  },
+  {
+    slug: 'bim-to-blender-ifc-import-guide',
+    path: '/bim-to-blender-ifc-import-guide',
+    title: 'BIM to Blender Import Guide: IFC Files, STEP Format & Archviz Setup',
+    description: 'How to import BIM models (IFC & STEP) into Blender for architectural visualization. Fix BIM metadata bloat, clean up geometry, and optimize workflows.',
+    category: 'BIM & 3D Visualization',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'autocad-to-blender-import-guide',
+    path: '/autocad-to-blender-import-guide',
+    title: 'AutoCAD to Blender Import Guide: DWG, DXF & Clean 3D Workflows',
+    description: 'Learn how to cleanly import AutoCAD DWG/DXF files into Blender. Fix scale factors, curve resolution, and clean up CAD geometry for 3D rendering.',
+    category: 'CAD & 3D Workflows',
+    readTime: '7 min read'
+  },
+  {
     slug: 'blender-to-unreal-nanite-lumen-guide',
     path: '/blender-to-unreal-nanite-lumen-guide',
     title: 'Blender to Unreal Engine 5: Optimizing Assets for Nanite & Lumen',
