@@ -1,5 +1,21 @@
 export const articles = [
  {
+    slug: 'photogrammetry-3d-scan-to-blender-guide',
+    path: '/photogrammetry-3d-scan-to-blender-guide',
+    title: '3D Scan & Photogrammetry to Blender: Mesh Optimization & Retopology',
+    description: 'How to clean up raw 3D scans and photogrammetry models in Blender. Fix heavy polycounts, bake high-poly details to low-poly meshes, and optimize CAD workflows.',
+    category: '3D Scanning & Retopology',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'civil-3d-gis-to-blender-terrain-guide',
+    path: '/civil-3d-gis-to-blender-terrain-guide',
+    title: 'Civil 3D & GIS to Blender: Importing Terrain Surfaces & DEM Data',
+    description: 'How to import Civil 3D surfaces and GIS topographical data into Blender. Create accurate 3D site terrains using DEM heightmaps and satellite imagery.',
+    category: 'GIS & Civil Visualization',
+    readTime: '8 min read'
+  },
+  {
     slug: '3d-file-formats-fbx-obj-gltf-guide',
     path: '/3d-file-formats-fbx-obj-gltf-guide',
     title: 'FBX vs OBJ vs glTF: Choosing the Right 3D File Format',
