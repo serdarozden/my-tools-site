@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'digital-art-generative-3d-nft-guide',
+    path: '/digital-art-generative-3d-nft-guide',
+    title: 'The Evolution of Digital Art: From Generative 3D Geometry to On-Chain Provenance',
+    description: 'Explore the bridge between algorithmic 3D geometry, digital art appreciation, and blockchain verification for high-value digital asset collectors.',
+    category: 'Digital Art & Collectibles',
+    readTime: '6 min read'
+  },
+  {
+    slug: 'substance-painter-to-blender-unreal-guide',
+    path: '/substance-painter-to-blender-unreal-guide',
+    title: 'Substance Painter to Blender & Unreal Engine 5: PBR Texture Setup Guide',
+    description: 'Master PBR texture exports from Substance Painter into Blender and Unreal Engine 5. Fix metallic/roughness packing, normal map inverted Y channels, and UV setups.',
+    category: 'Texturing & PBR Workflows',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'parametric-design-rhino-grasshopper-blender-guide',
+    path: '/parametric-design-rhino-grasshopper-blender-guide',
+    title: 'Parametric Architecture: Rhino & Grasshopper to Blender Workflow',
+    description: 'How to transition procedural parametric architecture models from Rhino Grasshopper to Blender for photorealistic Cycles rendering and animation.',
+    category: 'Parametric Architecture',
+    readTime: '8 min read'
+  },
+  {
     slug: 'photogrammetry-3d-scan-to-blender-guide',
     path: '/photogrammetry-3d-scan-to-blender-guide',
     title: '3D Scan & Photogrammetry to Blender: Mesh Optimization & Retopology',
