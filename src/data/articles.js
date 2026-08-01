@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'web3-for-digital-artists-nft-guide',
+    path: '/web3-for-digital-artists-nft-guide',
+    title: 'Web3 for Artists: Empowering Creators Through On-Chain Authenticity',
+    description: 'A comprehensive guide to Web3 for digital artists and collectors. Understand smart contract royalties, digital scarcity, provenance, and decentralized storage.',
+    category: 'Web3 & Digital Art',
+    readTime: '7 min read'
+  },
+  {
+    slug: '3d-nft-collecting-generative-art-guide',
+    path: '/3d-nft-collecting-generative-art-guide',
+    title: 'Collecting 3D & Generative Art: What Serious Collectors Look For',
+    description: 'Guide for digital art collectors on evaluating 3D NFTs, procedural generative art, rendering quality, and long-term fine art curation.',
+    category: 'Art Curation & NFTs',
+    readTime: '6 min read'
+  },
+  {
+    slug: 'blender-unity-optimization-mobile-web-guide',
+    path: '/blender-unity-optimization-mobile-web-guide',
+    title: 'Blender to Unity Optimization: Reducing Draw Calls & Mesh Polycounts',
+    description: 'Optimize Blender 3D models for Unity game engine. Reduce draw calls, create LOD chains, combine mesh materials, and optimize textures.',
+    category: '3D Optimization & Unity',
+    readTime: '8 min read'
+  },
+  {
     slug: 'digital-art-generative-3d-nft-guide',
     path: '/digital-art-generative-3d-nft-guide',
     title: 'The Evolution of Digital Art: From Generative 3D Geometry to On-Chain Provenance',
