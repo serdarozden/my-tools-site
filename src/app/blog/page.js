@@ -1,7 +1,27 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import { articles } from '@/data/articles';
 
 export default function BlogIndexPage() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 10;
+
+  // Toplam sayfa sayısı
+  const totalPages = Math.ceil(articles.length / postsPerPage);
+
+  // Mevcut sayfada gösterilecek 10 yazıyı dilimle
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentArticles = articles.slice(indexOfFirstPost, indexOfLastPost);
+
+  // Sayfa değiştirme ve yumuşakça yukarı kaydırma
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <main className="max-w-4xl mx-auto px-4 py-12 text-slate-100 min-h-screen">
       {/* Geri Dönüş */}
@@ -24,9 +44,9 @@ export default function BlogIndexPage() {
         </p>
       </header>
 
-      {/* Yazıların Listesi */}
-      <div className="space-y-6">
-        {articles.map((article) => (
+      {/* Yazıların Listesi (10 Adet) */}
+      <div className="space-y-6 mb-12">
+        {currentArticles.map((article) => (
           <article 
             key={article.slug}
             className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 hover:border-zinc-700 transition-colors"
@@ -58,6 +78,48 @@ export default function BlogIndexPage() {
           </article>
         ))}
       </div>
+
+      {/* Sayfalama Kontrolleri (Pagination) */}
+      {totalPages > 1 && (
+        <div className="flex items-center justify-center gap-2 border-t border-zinc-800 pt-8">
+          
+          {/* Önceki Butonu */}
+          <button
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={currentPage === 1}
+            className="px-4 py-2 text-sm font-bold rounded-xl bg-zinc-900 border border-zinc-800 text-slate-200 hover:bg-zinc-800 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+          >
+            &larr; Prev
+          </button>
+
+          {/* Sayfa Numaraları */}
+          <div className="flex items-center gap-2 px-2">
+            {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNum) => (
+              <button
+                key={pageNum}
+                onClick={() => handlePageChange(pageNum)}
+                className={`w-10 h-10 text-sm font-bold rounded-xl border transition-all ${
+                  currentPage === pageNum
+                    ? 'bg-blue-600 border-blue-500 text-white shadow-lg shadow-blue-500/20'
+                    : 'bg-zinc-900 border-zinc-800 text-slate-300 hover:bg-zinc-800'
+                }`}
+              >
+                {pageNum}
+              </button>
+            ))}
+          </div>
+
+          {/* Sonraki Butonu */}
+          <button
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={currentPage === totalPages}
+            className="px-4 py-2 text-sm font-bold rounded-xl bg-zinc-900 border border-zinc-800 text-slate-200 hover:bg-zinc-800 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+          >
+            Next &rarr;
+          </button>
+
+        </div>
+      )}
     </main>
   );
 }
