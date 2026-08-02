@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'murat-pak-nft-conceptual-art-analysis',
+    path: '/murat-pak-nft-conceptual-art-analysis',
+    title: 'Murat Pak & Conceptual NFT Art: Redefining Digital Scarcity Through Smart Contracts',
+    description: 'An in-depth analysis of Murat Pak (PAK) digital art. Explore how Merge, Ash, and dynamic smart contract mechanics redefined Web3 ownership and fine art.',
+    category: 'Conceptual Art & Web3',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'generative-node-art-blender-geometry-nodes-guide',
+    path: '/generative-node-art-blender-geometry-nodes-guide',
+    title: 'Creating Generative Minimalist 3D Art with Blender Geometry Nodes',
+    description: 'Learn how to create procedural, minimalist 3D artwork using Blender Geometry Nodes. Master mathematical arrays, procedural displacement, and studio lighting setups.',
+    category: '3D Art & Geometry Nodes',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'smart-contracts-dynamic-nfts-art-guide',
+    path: '/smart-contracts-dynamic-nfts-art-guide',
+    title: 'Dynamic NFTs: How Smart Contracts Evolve Visual Art',
+    description: 'How dynamic NFTs and on-chain SVG/3D metadata work. Learn how smart contracts alter visual artwork based on time, wallet data, and external triggers.',
+    category: 'Smart Contracts & Generative Tech',
+    readTime: '6 min read'
+  },
+  {
     slug: 'web3-for-digital-artists-nft-guide',
     path: '/web3-for-digital-artists-nft-guide',
     title: 'Web3 for Artists: Empowering Creators Through On-Chain Authenticity',
