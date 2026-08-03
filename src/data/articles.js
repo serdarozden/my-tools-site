@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'autocad-3d-to-blender-archviz-guide',
+    path: '/autocad-3d-to-blender-archviz-guide',
+    title: 'AutoCAD 3D to Blender ArchViz: DWG Export & Photorealistic Rendering',
+    description: 'How to import AutoCAD 3D DWG/DXF models into Blender for architectural visualization. Clean up geometry, assign PBR materials, and render with Cycles.',
+    category: 'CAD & ArchViz Pipeline',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'generative-art-curation-collectors-guide',
+    path: '/generative-art-curation-collectors-guide',
+    title: 'Generative Art Curation: Evaluating Code-Based & Algorithmic 3D Art',
+    description: 'Guide for fine art collectors on evaluating generative, code-based 3D digital art. Understand mathematical aesthetics, smart contract algorithms, and rarity.',
+    category: 'Digital Art Curation',
+    readTime: '6 min read'
+  },
+  {
+    slug: 'unreal-engine-5-nanite-vs-lods-guide',
+    path: '/unreal-engine-5-nanite-vs-lods-guide',
+    title: 'Unreal Engine 5 Nanite vs. Traditional LODs: When to Use Virtualized Geometry',
+    description: 'Compare UE5 Nanite virtualized geometry with traditional LOD chains. Learn when to enable Nanite for high-poly 3D models and when to stick to classic game optimization.',
+    category: 'Unreal Engine 5 & Game Dev',
+    readTime: '8 min read'
+  },
+   {
     slug: 'murat-pak-nft-conceptual-art-analysis',
     path: '/murat-pak-nft-conceptual-art-analysis',
     title: 'Murat Pak & Conceptual NFT Art: Redefining Digital Scarcity Through Smart Contracts',
