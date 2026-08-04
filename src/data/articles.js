@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'idecad-to-revit-bim-interoperability-guide',
+    path: '/idecad-to-revit-bim-interoperability-guide',
+    title: 'iDECAD to Revit BIM Interoperability: IFC Export & Structural Coordination',
+    description: 'Learn how to export structural models from iDECAD into Autodesk Revit via IFC. Fix geometry misalignment, section mapping, and grid alignment bugs.',
+    category: 'BIM & Structural Engineering',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'mobile-game-3d-asset-optimization-guide',
+    path: '/mobile-game-3d-asset-optimization-guide',
+    title: 'Low-Poly 3D Asset Optimization Strategies for Mobile Games',
+    description: 'Comprehensive guide to optimizing low-poly 3D models for mobile game engines. Reduce draw calls, bake texture atlases, and control mesh vertex counts.',
+    category: 'Game Dev & 3D Optimization',
+    readTime: '6 min read'
+  },
+  {
+    slug: 'nextjs-dynamic-routing-content-scale-guide',
+    path: '/nextjs-dynamic-routing-content-scale-guide',
+    title: 'Next.js Dynamic Routing & SSG Optimization for Content-Heavy Sites',
+    description: 'Best practices for architecting scalable dynamic routes using Next.js App Router, SSG caching strategies, and automated static parameter generation.',
+    category: 'Web Dev & Next.js',
+    readTime: '8 min read'
+  },
+  {
     slug: 'autocad-3d-to-blender-archviz-guide',
     path: '/autocad-3d-to-blender-archviz-guide',
     title: 'AutoCAD 3D to Blender ArchViz: DWG Export & Photorealistic Rendering',
