@@ -1,5 +1,53 @@
 export const articles = [
  {
+    slug: 'blender-geometry-nodes-parametric-building-generator',
+    path: '/blender-geometry-nodes-parametric-building-generator',
+    title: 'Blender Geometry Nodes: Building a Parametric Architectural Generator',
+    description: 'Learn how to build a parametric procedural building generator using Blender Geometry Nodes. Instantiate wall modules, control floor heights, and auto-tile roofs.',
+    category: 'Blender & Procedural Modeling',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'blender-cycles-vs-eevee-next-lighting-guide',
+    path: '/blender-cycles-vs-eevee-next-lighting-guide',
+    title: 'Blender Cycles vs. EEVEE Next: Choosing the Right Render Pipeline',
+    description: 'Deep dive into Blender Cycles ray tracing versus EEVEE Next real-time rendering engine. Compare indirect lighting, subsurface scattering, and render times.',
+    category: 'Blender Rendering & Lighting',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'procedural-loop-animation-blender-3d-nfts-guide',
+    path: '/procedural-loop-animation-blender-3d-nfts-guide',
+    title: 'Creating Seamless Procedural Animation Loops in Blender for 3D NFTs',
+    description: 'Master seamless 3D animation loops in Blender for digital collectors and NFT marketplaces. Learn noise modifiers, rotation math, and seamless keyframing.',
+    category: 'Blender & Web3 Art',
+    readTime: '6 min read'
+  },
+  {
+    slug: '3d-nft-art-curation-evaluating-procedural-assets',
+    path: '/3d-nft-art-curation-evaluating-procedural-assets',
+    title: '3D NFT Art Curation: Evaluating Generative & Procedural Assets',
+    description: 'Guide for digital art collectors on evaluating 3D NFT assets, procedural node networks, render fidelity, and algorithmic rarity in Web3 collections.',
+    category: 'NFT & Digital Art Curation',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'optimizing-3d-files-decentralized-storage-nfts',
+    path: '/optimizing-3d-files-decentralized-storage-nfts',
+    title: 'Optimizing 3D Files for Decentralized Storage & On-Chain NFTs',
+    description: 'Learn how to optimize and compress 3D assets (GLTF/GLB) using Draco compression for fast IPFS decentralized storage and seamless Web3 NFT integration.',
+    category: 'Web3 & 3D Pipeline',
+    readTime: '6 min read'
+  },
+  {
+    slug: 'metaverse-architecture-virtual-real-estate-design-guide',
+    path: '/metaverse-architecture-virtual-real-estate-design-guide',
+    title: 'Metaverse Architecture: Designing Virtual Real Estate & Digital Galleries',
+    description: 'Applying classical architectural principles, spatial ergonomics, and low-poly CAD modeling to design functional metaverse spaces and 3D NFT exhibition halls.',
+    category: 'Digital Architecture & Metaverse',
+    readTime: '8 min read'
+  },
+  {
     slug: 'idecad-to-revit-bim-interoperability-guide',
     path: '/idecad-to-revit-bim-interoperability-guide',
     title: 'iDECAD to Revit BIM Interoperability: IFC Export & Structural Coordination',
