@@ -1,5 +1,45 @@
 export const articles = [
  {
+    slug: 'autocad-to-blender-precision-modeling-workflow',
+    path: '/autocad-to-blender-precision-modeling-workflow',
+    title: 'AutoCAD to Blender Precision Modeling: Scale & Mesh Clean-up Guide',
+    description: 'Learn how to import AutoCAD DXF/DWG vector geometry into Blender with millimeter precision, accurate scale preservation, and clean vertex cleanup.',
+    category: 'CAD & 3D Interoperability',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'blender-pbr-texture-baking-for-realtime-engines',
+    path: '/blender-pbr-texture-baking-for-realtime-engines',
+    title: 'Blender PBR Texture Baking: High-Poly to Real-Time Asset Pipeline',
+    description: 'Master texture baking in Blender. Bake high-poly procedural materials into Diffuse, Roughness, Normal, and Metallic PBR maps for web and game engine pipelines.',
+    category: 'Blender Pipeline',
+    readTime: '6 min read'
+  },
+  {
+    slug: 'nextjs-tailwind-performance-optimization-3d-sites',
+    path: '/nextjs-tailwind-performance-optimization-3d-sites',
+    title: 'Next.js & Tailwind CSS: Optimizing Performance for Asset-Heavy Sites',
+    description: 'Learn performance tuning techniques for Next.js App Router and Tailwind CSS sites featuring dynamic 3D viewports, SSG rendering, and asset caching.',
+    category: 'Web Development & Next.js',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'spatial-audio-3d-interactive-environments-nfts',
+    path: '/spatial-audio-3d-interactive-environments-nfts',
+    title: 'Spatial Audio in 3D Environments: The Next Frontier for NFT Curators',
+    description: 'How Web3 art curators and collectors evaluate spatial audio integration, ambient attenuation, and immersive acoustics in 3D NFT environments.',
+    category: 'NFT & Sound Architecture',
+    readTime: '6 min read'
+  },
+  {
+    slug: 'webgpu-standard-real-time-3d-browser-rendering-analysis',
+    path: '/webgpu-standard-real-time-3d-browser-rendering-analysis',
+    title: 'WebGPU Adoption: How Real-Time Browser 3D Rendering Is Evolving',
+    description: 'Technical analysis of the WebGPU rendering standard. Discover how low-level GPU access empowers browser-based CAD, WebGL evolution, and real-time 3D web apps.',
+    category: 'Trending Tech & Web Standards',
+    readTime: '8 min read'
+  },
+  {
     slug: 'blender-geometry-nodes-parametric-building-generator',
     path: '/blender-geometry-nodes-parametric-building-generator',
     title: 'Blender Geometry Nodes: Building a Parametric Architectural Generator',
