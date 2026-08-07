@@ -1,5 +1,45 @@
 export const articles = [
  {
+    slug: 'bim-ifc-data-exchange-autocad-revit-workflow',
+    path: '/bim-ifc-data-exchange-autocad-revit-workflow',
+    title: 'BIM IFC Data Exchange: Schema Mapping & Geometry Preservation',
+    description: 'Master IFC schema data exchange between AutoCAD, Revit, and open-source BIM viewers. Ensure parameter mapping and geometric integrity across structural models.',
+    category: 'BIM & CAD Interoperability',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'blender-geometry-nodes-procedural-modeling-guide',
+    path: '/blender-geometry-nodes-procedural-modeling-guide',
+    title: 'Blender Geometry Nodes: Non-Destructive Procedural Modeling Architecture',
+    description: 'Master procedural modeling in Blender using Geometry Nodes. Learn fields, attribute instancing, curve deformation, and non-destructive 3D asset generation.',
+    category: 'Blender Pipeline',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'nextjs-app-router-seo-metadata-optimization',
+    path: '/nextjs-app-router-seo-metadata-optimization',
+    title: 'Next.js App Router Technical SEO: Dynamic Metadata & JSON-LD Guide',
+    description: 'Master technical SEO in Next.js App Router. Implement dynamic Metadata API, Open Graph cards, canonical tags, and structured JSON-LD schema for maximum search visibility.',
+    category: 'Web Development & Next.js',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'procedural-shader-math-web3-digital-art',
+    path: '/procedural-shader-math-web3-digital-art',
+    title: 'Procedural Shader Math: Evaluating Code Aesthetics in Web3 Generative Art',
+    description: 'How digital art collectors and Web3 curators analyze procedural shader algorithms, mathematical aesthetics, and WebGL code execution in generative NFT art.',
+    category: 'Generative Art & Web3',
+    readTime: '6 min read'
+  },
+  {
+    slug: 'ai-3d-mesh-generation-topology-workflows',
+    path: '/ai-3d-mesh-generation-topology-workflows',
+    title: 'AI 3D Mesh Generation: Analyzing Production Topology and Retopology Pipelines',
+    description: 'Technical analysis of AI-assisted 3D mesh generation tools. Learn how machine learning geometry pipelines impact quad retopology, UV mapping, and production workflows.',
+    category: 'Trending Tech & AI Pipelines',
+    readTime: '8 min read'
+  },
+  {
     slug: 'autocad-to-blender-precision-modeling-workflow',
     path: '/autocad-to-blender-precision-modeling-workflow',
     title: 'AutoCAD to Blender Precision Modeling: Scale & Mesh Clean-up Guide',
