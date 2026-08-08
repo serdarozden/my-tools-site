@@ -1,5 +1,45 @@
 export const articles = [
  {
+    slug: 'blender-to-unreal-engine-5-nanite-optimization-workflow',
+    path: '/blender-to-unreal-engine-5-nanite-optimization-workflow',
+    title: 'Blender to Unreal Engine 5: Nanite Mesh Optimization & FBX Setup',
+    description: 'Master exporting 3D assets from Blender to Unreal Engine 5. Optimize meshes for Nanite, configure FBX smoothing groups, tangents, and collision bounds.',
+    category: 'Game Engine Pipeline',
+    readTime: '8 min read'
+  },
+  {
+    slug: '3d-scan-retopology-quad-remeshing-blender-guide',
+    path: '/3d-scan-retopology-quad-remeshing-blender-guide',
+    title: '3D Scan Retopology: Converting Dense Photogrammetry to Production Quads',
+    description: 'Learn how to convert raw photogrammetry and 3D scan triangle meshes into clean quad topology using Blender, Shrinkwrap modifiers, and automated remeshers.',
+    category: '3D Scan & Asset Cleanup',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'autocad-3d-to-blender-archviz-rendering-pipeline',
+    path: '/autocad-3d-to-blender-archviz-rendering-pipeline',
+    title: 'AutoCAD 3D to Blender: Professional Architectural Visualization Pipeline',
+    description: 'Bridge AutoCAD 2D/3D technical drafts with Blender Cycles rendering. Learn layer management, material assignments, and realistic lighting setups for architectural visualization.',
+    category: 'CAD & ArchViz Pipeline',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'conceptual-digital-art-curation-web3-collectors',
+    path: '/conceptual-digital-art-curation-web3-collectors',
+    title: 'Conceptual Digital Art: Evaluating Smart Contract Logic & Tokenomics',
+    description: 'How Web3 collectors evaluate conceptual digital art, dynamic smart contract mechanisms, burn tokenomics, and minimalism in digital collections.',
+    category: 'Web3 & Conceptual Art',
+    readTime: '6 min read'
+  },
+  {
+    slug: 'substance-3d-painter-to-realtime-engines-udim-workflow',
+    path: '/substance-3d-painter-to-realtime-engines-udim-workflow',
+    title: 'Substance 3D Painter UDIM Workflow: High-Resolution Texturing for Unreal Engine',
+    description: 'Master UDIM multi-tile texture workflows in Substance 3D Painter. Export high-resolution texel density maps to Blender and Unreal Engine 5 efficiently.',
+    category: 'AAA Texture Pipelines',
+    readTime: '8 min read'
+  },
+  {
     slug: 'bim-ifc-data-exchange-autocad-revit-workflow',
     path: '/bim-ifc-data-exchange-autocad-revit-workflow',
     title: 'BIM IFC Data Exchange: Schema Mapping & Geometry Preservation',
