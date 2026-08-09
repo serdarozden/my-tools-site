@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'blender-to-unity-hdrp-urp-export-guide',
+    path: '/blender-to-unity-hdrp-urp-export-guide',
+    title: 'Blender to Unity Export Guide: Optimizing Assets for URP and HDRP',
+    description: 'Learn how to export 3D models from Blender to Unity using FBX and GLTF formats. Optimize materials, UV sets, and rig scaling for URP and HDRP pipelines.',
+    category: 'Unity Engine Pipeline',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'photogrammetry-3d-scan-mesh-cleanup-blender',
+    path: '/photogrammetry-3d-scan-mesh-cleanup-blender',
+    title: 'Photogrammetry 3D Scan Mesh Cleanup & Texture Reprojection in Blender',
+    description: 'Step-by-step guide to cleaning raw photogrammetry 3D scans in Blender. Fix non-manifold geometry, re-project vertex color textures, and optimize high-poly meshes.',
+    category: '3D Scan Processing',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'parametric-design-rhino-grasshopper-to-blender-workflow',
+    path: '/parametric-design-rhino-grasshopper-to-blender-workflow',
+    title: 'Parametric Design Workflow: Rhino Grasshopper to Blender Cycles',
+    description: 'Bridge computational parametric design in Rhino Grasshopper with Blender. Export clean OBJ/FBX files, convert NURBS surfaces to quads, and render in Cycles.',
+    category: 'Computational & Parametric Architecture',
+    readTime: '7 min read'
+  },
+  {
     slug: 'blender-to-unreal-engine-5-nanite-optimization-workflow',
     path: '/blender-to-unreal-engine-5-nanite-optimization-workflow',
     title: 'Blender to Unreal Engine 5: Nanite Mesh Optimization & FBX Setup',
