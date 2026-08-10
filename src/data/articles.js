@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: '3d-file-formats-fbx-obj-gltf-game-dev-guide',
+    path: '/3d-file-formats-fbx-obj-gltf-game-dev-guide',
+    title: '3D File Formats Explained: FBX vs OBJ vs glTF for Game Engines & Web',
+    description: 'Comprehensive guide comparing FBX, OBJ, and glTF file formats for game development, web 3D, and ArchViz pipelines. Learn when to use each format.',
+    category: '3D Formats & Tech',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'substance-3d-painter-to-unreal-engine-5-pbr-export',
+    path: '/substance-3d-painter-to-unreal-engine-5-pbr-export',
+    title: 'Substance 3D Painter to Unreal Engine 5: PBR Texture Packing Guide',
+    description: 'Export PBR textures from Substance 3D Painter to Unreal Engine 5. Master packed ORM maps, ACES color spaces, and master material setup in UE5.',
+    category: 'PBR Texturing Pipeline',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'game-asset-optimization-lod-draw-calls-reduction',
+    path: '/game-asset-optimization-lod-draw-calls-reduction',
+    title: 'Game Asset Optimization: Texel Density, Draw Calls & LOD Chains',
+    description: 'Essential optimization techniques for 3D real-time game assets. Master texel density, draw call reduction, texture atlas packing, and LOD chains.',
+    category: 'Real-Time Performance',
+    readTime: '9 min read'
+  },
+  {
     slug: 'blender-to-unity-hdrp-urp-export-guide',
     path: '/blender-to-unity-hdrp-urp-export-guide',
     title: 'Blender to Unity Export Guide: Optimizing Assets for URP and HDRP',
