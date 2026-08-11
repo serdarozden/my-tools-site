@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'idecad-vs-autocad-structural-bim-comparison',
+    path: '/idecad-vs-autocad-structural-bim-comparison',
+    title: 'iDECAD vs AutoCAD: Choosing the Right Tool for Structural & Architectural Design',
+    description: 'Detailed comparison between iDECAD and AutoCAD for structural engineering, reinforced concrete design, BIM integration, and architectural workflows.',
+    category: 'AEC & Structural Software',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'blender-to-unreal-engine-5-animation-rigging-export',
+    path: '/blender-to-unreal-engine-5-animation-rigging-export',
+    title: 'Blender to Unreal Engine 5: Character Rigging & Animation Export Guide',
+    description: 'Export skeletal meshes, armatures, and complex character animations from Blender to Unreal Engine 5. Fix bone scale issues, root motion, and Control Rig setups.',
+    category: 'Character & Animation Pipeline',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'murat-pak-conceptual-digital-art-tokenomics-analysis',
+    path: '/murat-pak-conceptual-digital-art-tokenomics-analysis',
+    title: 'Murat Pak & Conceptual Digital Art: Mechanics, Scarcity & Tokenomics',
+    description: 'Deep dive into Murat Pak (Pak) conceptual digital art, contract mechanics, Ash ecosystem, gamified burn mechanisms, and the philosophy of digital scarcity.',
+    category: 'Conceptual Art & Web3',
+    readTime: '8 min read'
+  },
+  {
     slug: '3d-file-formats-fbx-obj-gltf-game-dev-guide',
     path: '/3d-file-formats-fbx-obj-gltf-game-dev-guide',
     title: '3D File Formats Explained: FBX vs OBJ vs glTF for Game Engines & Web',
