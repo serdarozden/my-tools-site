@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'unreal-engine-5-nanite-mesh-optimization-guide',
+    path: '/unreal-engine-5-nanite-mesh-optimization-guide',
+    title: 'Unreal Engine 5 Nanite: Virtualized Geometry & High-Poly Optimization',
+    description: 'Master Unreal Engine 5 Nanite virtualized geometry. Learn high-poly import workflows, fallback mesh configuration, material limits, and performance tuning.',
+    category: 'Unreal Engine 5 Tech',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'transfer-cad-measurements-to-blender-materials-guide',
+    path: '/transfer-cad-measurements-to-blender-materials-guide',
+    title: 'How to Transfer CAD Measurements to Accurate Material Scales in Blender',
+    description: 'Guide to mapping exact CAD dimensions to PBR material UV scales in Blender. Convert millimeter and meter units from AutoCAD to Shader Editor setups.',
+    category: 'CAD & Architectural 3D',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'substance-3d-painter-to-blender-pbr-pipeline',
+    path: '/substance-3d-painter-to-blender-pbr-pipeline',
+    title: 'Substance 3D Painter to Blender: Seamless PBR Texture Export Guide',
+    description: 'Export PBR texture sets from Substance 3D Painter to Blender Cycles and Eevee. Map Principled BSDF inputs, normal maps, and displacement shaders.',
+    category: 'PBR Texturing & Shader Setup',
+    readTime: '8 min read'
+  },
+  {
     slug: 'idecad-vs-autocad-structural-bim-comparison',
     path: '/idecad-vs-autocad-structural-bim-comparison',
     title: 'iDECAD vs AutoCAD: Choosing the Right Tool for Structural & Architectural Design',
