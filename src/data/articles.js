@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'generative-design-bim-computational-architecture',
+    path: '/generative-design-bim-computational-architecture',
+    title: 'Generative Design in BIM: Computational Workflows for Modern Architecture',
+    description: 'Explore how generative design and algorithms transform BIM workflows in Revit and Grasshopper. Optimize spatial layouts, structural grids, and solar radiation.',
+    category: 'BIM & Algorithmic Design',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'hammer-units-to-meters-centimeters-conversion-3d-guide',
+    path: '/hammer-units-to-meters-centimeters-conversion-3d-guide',
+    title: 'Hammer Units to Centimeters: Converting Source Engine Scales to Metric',
+    description: 'Convert Source Engine Hammer Units to meters, centimeters, and feet in Blender and Unreal Engine. Precise architectural grid setup for game level design.',
+    category: 'Game Engine Grid Units',
+    readTime: '7 min read'
+  },
+  {
+    slug: 'metaverse-spatial-architecture-3d-web-design',
+    path: '/metaverse-spatial-architecture-3d-web-design',
+    title: 'Metaverse Spatial Architecture: Designing Real-Time 3D Web Environments',
+    description: 'Design principles for metaverse spatial architecture and WebGL 3D environments. Master spatial ergonomics, WebXR lighting, and real-time optimization.',
+    category: 'Spatial Design & Web3',
+    readTime: '8 min read'
+  },
+  {
     slug: 'unreal-engine-5-nanite-mesh-optimization-guide',
     path: '/unreal-engine-5-nanite-mesh-optimization-guide',
     title: 'Unreal Engine 5 Nanite: Virtualized Geometry & High-Poly Optimization',
