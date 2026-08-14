@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: '3d-file-formats-obj-fbx-gltf-comparison-guide',
+    path: '/3d-file-formats-obj-fbx-gltf-comparison-guide',
+    title: '3D Model File Formats: OBJ vs FBX vs glTF Technical Breakdown',
+    description: 'Comprehensive comparison of OBJ, FBX, and glTF 3D model formats. Learn which format to choose for game engines, web 3D, and architectural visualization.',
+    category: '3D File Standards',
+    readTime: '8 min read'
+  },
+  {
+    slug: '3d-scan-retopology-photogrammetry-mesh-optimization',
+    path: '/3d-scan-retopology-photogrammetry-mesh-optimization',
+    title: '3D Scan Retopology: Converting Photogrammetry Scans to Game-Ready Geometry',
+    description: 'Master retopology workflows for raw photogrammetry and 3D scan meshes in Blender. Transform high-poly point clouds into clean, game-ready quad topology.',
+    category: 'Asset Optimization & Scans',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'blender-to-unity-export-settings-optimization',
+    path: '/blender-to-unity-export-settings-optimization',
+    title: 'Blender to Unity Export Settings: Seamless FBX Integration',
+    description: 'Optimal FBX export configuration from Blender to Unity. Fix axis rotation mismatches, scale issues, material assignments, and animation bone orientation.',
+    category: 'Pipeline Integration',
+    readTime: '7 min read'
+  },
+  {
     slug: 'generative-design-bim-computational-architecture',
     path: '/generative-design-bim-computational-architecture',
     title: 'Generative Design in BIM: Computational Workflows for Modern Architecture',
