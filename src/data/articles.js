@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'photogrammetry-3d-gaussian-splatting-vs-mesh-reconstruction',
+    path: '/photogrammetry-3d-gaussian-splatting-vs-mesh-reconstruction',
+    title: '3D Gaussian Splatting vs. Photogrammetry: Real-Time Spatial Rendering Guide',
+    description: 'Compare 3D Gaussian Splatting with photogrammetry mesh reconstruction. Learn rasterization pipelines, VRAM optimization, and point cloud conversion for WebGL.',
+    category: '3D Scan Processing',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'webgl-threejs-gltf-performance-optimization-web-3d',
+    path: '/webgl-threejs-gltf-performance-optimization-web-3d',
+    title: 'Optimizing Three.js & glTF Assets for WebGL: Draw Calls & Draco Compression',
+    description: 'Boost WebGL performance in Next.js apps. Learn Draco compression, WebGL draw call reduction, texture atlas packing, and Three.js memory management.',
+    category: 'Web Development & Next.js',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'autocad-dxf-dwg-to-threejs-webgl-conversion-pipeline',
+    path: '/autocad-dxf-dwg-to-threejs-webgl-conversion-pipeline',
+    title: 'Converting AutoCAD DXF/DWG Vector Drawings to Interactive Three.js WebGL Tools',
+    description: 'Build web-based CAD viewers. Parse DXF/DWG vector entities into Three.js line segments, optimize polyline vertices, and calculate real-time surface areas.',
+    category: 'CAD & Architectural 3D',
+    readTime: '8 min read'
+  },
+  {
     slug: '3d-file-formats-obj-fbx-gltf-comparison-guide',
     path: '/3d-file-formats-obj-fbx-gltf-comparison-guide',
     title: '3D Model File Formats: OBJ vs FBX vs glTF Technical Breakdown',
