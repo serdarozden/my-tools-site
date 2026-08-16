@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'web3-art-streaming-decentralized-media-protocols',
+    path: '/web3-art-streaming-decentralized-media-protocols',
+    title: 'Web3 Art Streaming: Decentralized Media Protocols & Technical Delivery',
+    description: 'Technical analysis of Web3 art streaming protocols, dynamic IPFS video delivery, decentralized storage indexing, and monetization pipelines for digital artists.',
+    category: 'Web3 Infrastructure',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'filmbox-fbx-history-3d-interoperability-architecture',
+    path: '/filmbox-fbx-history-3d-interoperability-architecture',
+    title: 'From Filmbox to FBX: The Architectural History of 3D Interoperability',
+    description: 'Explore the origins of Kaydara Filmbox, its transition into Autodesk FBX, binary container architecture, and why it remains the backbone of real-time 3D animation.',
+    category: '3D Formats & Tech',
+    readTime: '7 min read'
+  },
+  {
+    slug: '3d-asset-topology-optimization-quads-vs-triangles',
+    path: '/3d-asset-topology-optimization-quads-vs-triangles',
+    title: '3D Topology Rules: Quad-Based Modeling vs Real-Time Triangulation',
+    description: 'Master mesh topology for real-time engines and subdivision modeling. Learn when to use quads, triangles, and how to eliminate N-gons for deformation.',
+    category: '3D Modeling Standards',
+    readTime: '8 min read'
+  },
+  {
     slug: 'photogrammetry-3d-gaussian-splatting-vs-mesh-reconstruction',
     path: '/photogrammetry-3d-gaussian-splatting-vs-mesh-reconstruction',
     title: '3D Gaussian Splatting vs. Photogrammetry: Real-Time Spatial Rendering Guide',
