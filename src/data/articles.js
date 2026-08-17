@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'civil-3d-pipe-networks-to-blender-visualization',
+    path: '/civil-3d-pipe-networks-to-blender-visualization',
+    title: 'Exporting Civil 3D Pipe Networks to Blender for Infrastructure Visualization',
+    description: 'Transform complex Civil 3D underground utility systems, manholes, and pipe runs into lightweight, material-ready 3D assets for Blender Cycles rendering.',
+    category: 'Civil Engineering & 3D Viz',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'bcf-bim-collaboration-format-issue-tracking-guide',
+    path: '/bcf-bim-collaboration-format-issue-tracking-guide',
+    title: 'OpenBIM BCF Architecture: Standardizing Issue Tracking in IFC Models',
+    description: 'Streamline cross-disciplinary coordination by exchanging lightweight BCF XML and API payloads instead of re-exporting multi-gigabyte IFC building models.',
+    category: 'BIM & OpenBIM Workflows',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'openvdb-volumetric-baking-for-realtime-engines',
+    path: '/openvdb-volumetric-baking-for-realtime-engines',
+    title: 'OpenVDB to Realtime Pipeline: Baking Volumetric Data into 3D Texture Atlases',
+    description: 'Bridge the gap between dense offline fluid simulations and high-frame-rate web/game engines using volumetric texture slicing and raymarching shaders.',
+    category: '3D Rendering & VFX',
+    readTime: '9 min read'
+  },
+  {
     slug: 'web3-art-streaming-decentralized-media-protocols',
     path: '/web3-art-streaming-decentralized-media-protocols',
     title: 'Web3 Art Streaming: Decentralized Media Protocols & Technical Delivery',
