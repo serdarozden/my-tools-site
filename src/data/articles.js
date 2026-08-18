@@ -1,5 +1,53 @@
 export const articles = [
  {
+    slug: 'react-three-fiber-gltf-draco-optimization-guide',
+    path: '/react-three-fiber-gltf-draco-optimization-guide',
+    title: 'Draco Compression and Meshopt Pipeline in React Three Fiber',
+    description: 'Reduce 3D mesh file sizes by up to 90% and prevent main-thread lag during model instantiation in React Three Fiber web experiences.',
+    category: 'React & Web3D Performance',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'ifc-to-webgl-openbim-viewer-nextjs-guide',
+    path: '/ifc-to-webgl-openbim-viewer-nextjs-guide',
+    title: 'Building Client-Side OpenBIM IFC Viewers in Next.js',
+    description: 'Parse complex architectural and structural IFC data directly in the browser using WebAssembly without server-side rendering bottlenecks.',
+    category: 'BIM Engineering & Web3D',
+    readTime: '10 min read'
+  },
+  {
+    slug: 'blender-geometry-nodes-pbr-texture-baking-workflow',
+    path: '/blender-geometry-nodes-pbr-texture-baking-workflow',
+    title: 'Baking Procedural Geometry Nodes to WebGL-Ready PBR Materials',
+    description: 'Step-by-step workflow for converting non-destructive Geometry Nodes setups and procedural Cycles shaders into compact, real-time PBR texture sets.',
+    category: '3D Pipeline & Texturing',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'civil-3d-pipe-networks-to-blender-visualization',
+    path: '/civil-3d-pipe-networks-to-blender-visualization',
+    title: 'Exporting Civil 3D Pipe Networks to Blender for Infrastructure Visualization',
+    description: 'Transform complex Civil 3D underground utility systems, manholes, and pipe runs into lightweight, material-ready 3D assets for Blender Cycles rendering.',
+    category: 'Civil Engineering & 3D Viz',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'threejs-raw-glsl-custom-water-shader-tutorial',
+    path: '/threejs-raw-glsl-custom-water-shader-tutorial',
+    title: 'Writing Custom GLSL Wave and Refraction Shaders for Three.js',
+    description: 'Step-by-step guide to writing performant GLSL code for real-time water surfaces using dynamic vertex displacement and animated fragment uniforms.',
+    category: 'WebGL & GLSL Shaders',
+    readTime: '9 min read'
+  },
+  {
+    slug: '3d-gaussian-splatting-webgl-integration-guide',
+    path: '/3d-gaussian-splatting-webgl-integration-guide',
+    title: 'Integrating 3D Gaussian Splatting Viewers in WebGL Applications',
+    description: 'Stream photorealistic real-world scans into modern web browsers using GPU-accelerated 3D Gaussian Splatting rendering pipelines.',
+    category: 'Web Graphics & Photogrammetry',
+    readTime: '8 min read'
+  },
+  {
     slug: 'civil-3d-pipe-networks-to-blender-visualization',
     path: '/civil-3d-pipe-networks-to-blender-visualization',
     title: 'Exporting Civil 3D Pipe Networks to Blender for Infrastructure Visualization',
