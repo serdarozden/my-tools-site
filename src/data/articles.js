@@ -72,14 +72,6 @@ export const articles = [
     readTime: '8 min read'
   },
   {
-    slug: 'civil-3d-pipe-networks-to-blender-visualization',
-    path: '/civil-3d-pipe-networks-to-blender-visualization',
-    title: 'Exporting Civil 3D Pipe Networks to Blender for Infrastructure Visualization',
-    description: 'Transform complex Civil 3D underground utility systems, manholes, and pipe runs into lightweight, material-ready 3D assets for Blender Cycles rendering.',
-    category: 'Civil Engineering & 3D Viz',
-    readTime: '8 min read'
-  },
-  {
     slug: 'bcf-bim-collaboration-format-issue-tracking-guide',
     path: '/bcf-bim-collaboration-format-issue-tracking-guide',
     title: 'OpenBIM BCF Architecture: Standardizing Issue Tracking in IFC Models',

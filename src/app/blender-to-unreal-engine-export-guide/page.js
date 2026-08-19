@@ -175,7 +175,7 @@ export default function BlenderToUe5ExportGuidePage() {
               </p>
             </div>
             <Link 
-              href="cad-and-3d-file-formats-guide" 
+              href="cad-3d-file-formats-guide" 
               className="whitespace-nowrap px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm transition-colors shadow-lg shadow-blue-600/30"
             >
               Read Guide &rarr;

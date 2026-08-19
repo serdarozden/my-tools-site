@@ -209,7 +209,7 @@ export default function CadAnd3dFileFormatsGuidePage() {
               </p>
             </div>
             <Link 
-              href="/blog/blender-to-ue5-export-guide" 
+              href="blender-to-unreal-engine-export-guide" 
               className="whitespace-nowrap px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm transition-colors shadow-lg shadow-blue-600/30"
             >
               Read UE5 Export Guide &rarr;
