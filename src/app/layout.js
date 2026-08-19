@@ -1,6 +1,6 @@
 import './globals.css';
 import Link from 'next/link';
-import Script from 'next/next-script'; // veya 'next/script'
+import Script from 'next/script';
 
 export const metadata = {
   title: 'TechTools - Technical Converters & Engineering Guides',
