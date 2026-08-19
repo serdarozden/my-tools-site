@@ -1,61 +1,79 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Contact Us - TechTools',
-  description: 'Get in touch with the TechTools team for feedback, support, or suggestions.',
+  title: 'Contact Us | serdarozden.com',
+  description: 'Get in touch with us for feedback, unit converter suggestions, or technical questions.',
 };
 
 export default function ContactPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12 text-slate-400">
-      <div className="mb-8">
-        <Link 
-          href="/" 
-          className="inline-flex items-center gap-2 text-sm font-semibold text-blue-500/80 hover:text-blue-400 transition"
-        >
-          &larr; Back to Home
-        </Link>
-      </div>
+    <div className="bg-black min-h-screen text-slate-100">
+      <main className="max-w-4xl mx-auto px-4 py-12">
+        {/* Navigasyon / Geri Dönüş Linki */}
+        <nav className="mb-8">
+          <Link 
+            href="/" 
+            className="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition-colors"
+          >
+            <span>←</span> Back to Home
+          </Link>
+        </nav>
 
-      <header className="mb-10 pb-8 border-b border-slate-800/60">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-300 tracking-tight mb-4">
-          Contact Us
-        </h1>
-        <p className="text-sm text-slate-500">Have feedback, suggestions, or technical questions?</p>
-      </header>
-
-      <div className="max-w-2xl bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6 sm:p-8">
-        <h2 className="text-lg font-bold text-slate-300 mb-3">Get in Touch</h2>
-        <p className="text-sm text-slate-400 mb-6 leading-relaxed">
-          We are continuously improving TechTools. If you noticed a bug in our unit converters, would like to suggest a new tool, or have questions regarding our technical guides, feel free to reach out to us.
-        </p>
-
-        <div className="grid sm:grid-cols-2 gap-4">
-          {/* Email Box */}
-          <div className="p-4 bg-slate-900 border border-slate-800 rounded-xl space-y-2">
-            <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block">Direct Email</span>
-            <a 
-              href="mailto:serdarozdenn@gmail.com" 
-              className="text-blue-400 font-medium hover:underline text-sm sm:text-base block truncate"
-            >
-              serdarozdenn@gmail.com
-            </a>
+        {/* Ana İçerik Kartı */}
+        <article className="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 sm:p-12 shadow-2xl">
+          {/* Üst Rozet Header */}
+          <div className="flex items-center gap-3 text-xs font-bold text-blue-400 mb-6">
+            <span className="bg-zinc-900 border border-zinc-700 px-3 py-1 rounded-md uppercase tracking-wider">
+              Get In Touch
+            </span>
+            <span className="text-zinc-600">•</span>
+            <span className="text-slate-200 font-semibold">Feedback & Support</span>
           </div>
 
-          {/* Twitter / X Box */}
-          <div className="p-4 bg-slate-900 border border-slate-800 rounded-xl space-y-2">
-            <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block">Twitter / X</span>
-            <a 
-              href="https://twitter.com/srdrozdn" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-400 font-medium hover:underline text-sm sm:text-base block truncate"
-            >
-              @srdrozdn
-            </a>
+          <h1 className="text-3xl sm:text-5xl font-black text-white mb-6 leading-tight tracking-tight">
+            Contact Us
+          </h1>
+
+          <p className="text-lg text-slate-200 leading-relaxed border-b border-zinc-800 pb-8 mb-8 font-medium">
+            We are continuously improving our web tools and unit converters. If you noticed a bug, would like to suggest a new tool, or have questions regarding our technical guides, feel free to reach out.
+          </p>
+
+          {/* İletişim Kartları Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* Direct Email Card */}
+            <div className="p-6 bg-zinc-900/60 border border-zinc-800 rounded-2xl hover:border-zinc-700 transition-colors flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-bold text-blue-400 uppercase tracking-wider block mb-2">
+                  Direct Email
+                </span>
+                <a 
+                  href="mailto:serdarozdenn@gmail.com" 
+                  className="text-white font-semibold hover:text-blue-300 text-base sm:text-lg block truncate transition-colors"
+                >
+                  serdarozdenn@gmail.com
+                </a>
+              </div>
+            </div>
+
+            {/* Twitter / X Card */}
+            <div className="p-6 bg-zinc-900/60 border border-zinc-800 rounded-2xl hover:border-zinc-700 transition-colors flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-bold text-blue-400 uppercase tracking-wider block mb-2">
+                  Twitter / X
+                </span>
+                <a 
+                  href="https://twitter.com/srdrozdn" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-white font-semibold hover:text-blue-300 text-base sm:text-lg block truncate transition-colors"
+                >
+                  @srdrozdn
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </main>
+        </article>
+      </main>
+    </div>
   );
 }
