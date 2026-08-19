@@ -1,6 +1,5 @@
 import './globals.css';
 import Link from 'next/link';
-import Script from 'next/script';
 
 export const metadata = {
   title: 'TechTools - Technical Converters & Engineering Guides',
@@ -11,12 +10,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <head>
-        {/* Google AdSense Script */}
-        <Script
+        {/* Google AdSense Script - Ham HTML olarak SSR çıktısına gömülür */}
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9166188896657946"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
       </head>
       <body className="bg-slate-950 text-slate-300 flex flex-col min-h-screen font-sans selection:bg-blue-600 selection:text-white">
