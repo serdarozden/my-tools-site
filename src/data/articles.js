@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'civil-3d-corridor-surface-to-blender-workflow',
+    path: '/civil-3d-corridor-surface-to-blender-workflow',
+    title: 'Civil 3D Corridor Surfaces to Blender Infrastructure Workflow',
+    description: 'Convert parametric Civil 3D highway corridors, subassemblies, and terrain TIN surfaces into optimized, quad-dominant meshes for Blender Cycles rendering.',
+    category: 'Civil Engineering & 3D Viz',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'webgpu-compute-shaders-threejs-particle-guide',
+    path: '/webgpu-compute-shaders-threejs-particle-guide',
+    title: 'Building 1 Million+ Particle Simulations with WebGPU Compute Shaders',
+    description: 'Transition from WebGL transform feedback to native WebGPU compute pipelines using WGSL inside Three.js for massive parallel particle physics.',
+    category: 'WebGPU & Advanced Shaders',
+    readTime: '10 min read'
+  },
+  {
+    slug: 'threejs-instanced-mesh-performance-optimization-guide',
+    path: '/threejs-instanced-mesh-performance-optimization-guide',
+    title: 'Optimizing Massive WebGL Scenes with Three.js InstancedMesh',
+    description: 'Render tens of thousands of individual 3D objects in a single draw call using GPU hardware instancing techniques in browser viewports.',
+    category: 'WebGL & Web3D Optimization',
+    readTime: '8 min read'
+  },
+  {
     slug: 'react-three-fiber-gltf-draco-optimization-guide',
     path: '/react-three-fiber-gltf-draco-optimization-guide',
     title: 'Draco Compression and Meshopt Pipeline in React Three Fiber',
