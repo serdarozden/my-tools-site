@@ -1,5 +1,6 @@
 import './globals.css';
 import Link from 'next/link';
+import Script from 'next/next-script'; // veya 'next/script'
 
 export const metadata = {
   title: 'TechTools - Technical Converters & Engineering Guides',
@@ -9,6 +10,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        {/* Google AdSense Script */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9166188896657946"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="bg-slate-950 text-slate-300 flex flex-col min-h-screen font-sans selection:bg-blue-600 selection:text-white">
         {/* Dark Header / Navbar */}
         <header className="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
@@ -25,16 +35,16 @@ export default function RootLayout({ children }) {
             </Link>
             
             <nav className="flex items-center gap-6 text-sm font-medium text-slate-400">
-  <Link href="/tools/unit-converter" className="hover:text-blue-400 transition">
-    Unit Converter
-  </Link>
-  <Link href="/blog" className="hover:text-blue-400 transition">
-    Guides
-  </Link>
-  <Link href="/gallery" className="hover:text-blue-400 transition text-blue-500/90 font-semibold">
-    NFT Gallery
-  </Link>
-</nav>
+              <Link href="/tools/unit-converter" className="hover:text-blue-400 transition">
+                Unit Converter
+              </Link>
+              <Link href="/blog" className="hover:text-blue-400 transition">
+                Guides
+              </Link>
+              <Link href="/gallery" className="hover:text-blue-400 transition text-blue-500/90 font-semibold">
+                NFT Gallery
+              </Link>
+            </nav>
           </div>
         </header>
 
