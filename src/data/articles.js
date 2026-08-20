@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'usd-usdz-vs-gltf-glb-3d-web-standards-guide',
+    path: '/usd-usdz-vs-gltf-glb-3d-web-standards-guide',
+    title: 'USD/USDZ vs glTF/GLB: Choosing the Right 3D Standard for Web & AR',
+    description: 'An architectural breakdown of Pixar’s OpenUSD ecosystem versus Khronos Group’s glTF 2.0. Evaluate runtime performance, asset composition, and WebXR browser integration.',
+    category: '3D Formats & Spatial Web',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'ifc4-3-civil-3d-openbim-infrastructure-workflow',
+    path: '/ifc4-3-civil-3d-openbim-infrastructure-workflow',
+    title: 'IFC4.3 for Infrastructure: Exporting Civil 3D Models to OpenBIM Standards',
+    description: 'Learn how buildingSMART’s IFC4.3 schema bridges linear infrastructure modeling, corridor geometry mapping, and OpenBIM interoperability for civil engineering projects.',
+    category: 'OpenBIM & Infrastructure',
+    readTime: '10 min read'
+  },
+  {
+    slug: 'nextjs-app-router-server-actions-web3-3d-metadata-guide',
+    path: '/nextjs-app-router-server-actions-web3-3d-metadata-guide',
+    title: 'Next.js App Router Server Actions for Web3 & 3D Metadata Pipelines',
+    description: 'Optimize server-side 3D asset processing. Parse GLB binary headers, validate metadata with Zod, and pin assets to IPFS entirely via Next.js Server Actions.',
+    category: 'Next.js & Web3 Engineering',
+    readTime: '8 min read'
+  },
+  {
     slug: 'civil-3d-corridor-surface-to-blender-workflow',
     path: '/civil-3d-corridor-surface-to-blender-workflow',
     title: 'Civil 3D Corridor Surfaces to Blender Infrastructure Workflow',
