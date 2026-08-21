@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: '3d-gaussian-splatting-vs-mesh-webgl-rendering-guide',
+    path: '/3d-gaussian-splatting-vs-mesh-webgl-rendering-guide',
+    title: '3D Gaussian Splatting vs Polygon Mesh: The Future of Web 3D Rendering',
+    description: 'An engineering analysis comparing radiance field representations with discrete polygon meshes for real-time WebGL and WebGPU canvas pipelines.',
+    category: 'Real-Time Graphics & AI',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'bsdd-buildingSMART-data-dictionary-ifc-mapping-guide',
+    path: '/bsdd-buildingSMART-data-dictionary-ifc-mapping-guide',
+    title: 'bSDD Integration: Automating Data Classification in OpenBIM Workflows',
+    description: 'Master the buildingSMART Data Dictionary API to bridge regional classification systems (CCI, Uniclass, Omniclass) with core IFC entity schemas.',
+    category: 'OpenBIM & Standards',
+    readTime: '10 min read'
+  },
+  {
+    slug: 'nextjs-dynamic-og-images-threejs-webgl-canvas-guide',
+    path: '/nextjs-dynamic-og-images-threejs-webgl-canvas-guide',
+    title: 'Dynamic Open Graph Image Generation for Interactive 3D Web Models',
+    description: 'Boost social engagement by generating real-time preview images for dynamic 3D scenes using Next.js @vercel/og and headless canvas snapshots.',
+    category: 'Next.js & Frontend Tooling',
+    readTime: '8 min read'
+  },
+  {
     slug: 'usd-usdz-vs-gltf-glb-3d-web-standards-guide',
     path: '/usd-usdz-vs-gltf-glb-3d-web-standards-guide',
     title: 'USD/USDZ vs glTF/GLB: Choosing the Right 3D Standard for Web & AR',
