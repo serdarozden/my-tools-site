@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'cityjson-vs-citygml-web-gis-3d-buildings-guide',
+    path: '/cityjson-vs-citygml-web-gis-3d-buildings-guide',
+    title: 'CityJSON vs CityGML: Optimizing 3D Urban GIS Data for Web Browsers',
+    description: 'Analyze the architectural shift from heavy GML XML schemas to CityJSON. Stream 3D city models, building footprints, and semantic terrain data with minimal memory footprints.',
+    category: 'Web GIS & 3D Urban Data',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'speckle-protocol-openbim-realtime-data-streaming-guide',
+    path: '/speckle-protocol-openbim-realtime-data-streaming-guide',
+    title: 'Speckle Protocol: Granular Data Streaming for Next-Gen BIM Workflows',
+    description: 'Bypass monolithic file exports. Move beyond rigid IFC/DWG transfers by using Speckle’s open-source data platform to stream sub-element geometries and parameters across design tools.',
+    category: 'OpenBIM & Real-Time Data',
+    readTime: '10 min read'
+  },
+  {
+    slug: 'materialx-standard-webgpu-pbr-pipeline-guide',
+    path: '/materialx-standard-webgpu-pbr-pipeline-guide',
+    title: 'MaterialX in WebGPU: Bringing Open Shading Standards to the Browser',
+    description: 'Explore MaterialX (Open material standard created by Lucasfilm). Learn how node-based XML shader graphs are compiled directly into WGSL for real-time WebGPU canvas execution.',
+    category: 'Graphics Standards & WebGPU',
+    readTime: '9 min read'
+  },
+  {
     slug: '3d-gaussian-splatting-vs-mesh-webgl-rendering-guide',
     path: '/3d-gaussian-splatting-vs-mesh-webgl-rendering-guide',
     title: '3D Gaussian Splatting vs Polygon Mesh: The Future of Web 3D Rendering',
