@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'ifc-mep-revit-civil-3d-pipe-clash-detection-guide',
+    path: '/ifc-mep-revit-civil-3d-pipe-clash-detection-guide',
+    title: 'Automating MEP Pipe Network Clash Detection in OpenBIM Pipelines',
+    description: 'Learn how to coordinate mechanical, electrical, and plumbing (MEP) models across Civil 3D and Revit using automated spatial clash matrices.',
+    category: 'OpenBIM & MEP Systems',
+    readTime: '10 min read'
+  },
+  {
+    slug: 'cinemachine-vs-unreal-camera-rigs-3d-animation-guide',
+    path: '/cinemachine-vs-unreal-camera-rigs-3d-animation-guide',
+    title: 'Unity Cinemachine vs Unreal Cine Camera Rigs: Procedural 3D Camera Systems',
+    description: 'Compare dynamic camera architectures for games, cutscenes, and virtual production. Master procedural composition, target tracking, and lens focal emulation.',
+    category: 'Real-Time Cinematics & Game Dev',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'web-cad-precision-floating-point-jitter-webgl-guide',
+    path: '/web-cad-precision-floating-point-jitter-webgl-guide',
+    title: 'Fixing Floating-Point Precision Loss in Large-Scale Web CAD Viewers',
+    description: 'Overcome 32-bit single-precision float limitations in WebGL shaders when rendering massive GIS coordinates or millimeter-precise CAD assemblies.',
+    category: 'Web Graphics Architecture',
+    readTime: '9 min read'
+  },
+  {
     slug: 'cityjson-vs-citygml-web-gis-3d-buildings-guide',
     path: '/cityjson-vs-citygml-web-gis-3d-buildings-guide',
     title: 'CityJSON vs CityGML: Optimizing 3D Urban GIS Data for Web Browsers',
