@@ -1,5 +1,15 @@
 import './globals.css';
 import Link from 'next/link';
+import Script from 'next/script';
+import { Inter } from 'next/font/google';
+
+// Font kaymasını (CLS) sıfırlayan Next.js font optimizasyonu
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  adjustFontFallback: true,
+  variable: '--font-inter',
+});
 
 export const metadata = {
   title: 'TechTools - Technical Converters & Engineering Guides',
@@ -8,18 +18,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="dark">
-      <head>
-        {/* Google AdSense Script - Ham HTML olarak SSR çıktısına gömülür */}
-        <script
-          async
+    <html lang="en" className={`dark ${inter.className}`}>
+      <head />
+      <body className="bg-slate-950 text-slate-300 flex flex-col min-h-screen font-sans selection:bg-blue-600 selection:text-white">
+        
+        {/* AdSense Script'i asenkron ve gelemeyen kaynakları bloklamadan yükle */}
+        <Script
+          id="google-adsense"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9166188896657946"
+          strategy="lazyOnload"
           crossOrigin="anonymous"
         />
-      </head>
-      <body className="bg-slate-950 text-slate-300 flex flex-col min-h-screen font-sans selection:bg-blue-600 selection:text-white">
-        {/* Dark Header / Navbar */}
-        <header className="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+
+        {/* Header alanına sabit yükseklik (h-16 = 64px) vererek kaymayı önlüyoruz */}
+        <header className="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50 h-16 min-h-[64px]">
           <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
             <Link 
               href="/" 
@@ -47,11 +59,11 @@ export default function RootLayout({ children }) {
         </header>
 
         {/* Ana İçerik */}
-        <div className="flex-1">
+        <main className="flex-1">
           {children}
-        </div>
+        </main>
 
-        {/* Dark Footer */}
+        {/* Footer */}
         <footer className="bg-slate-900 border-t border-slate-800/80 py-8 mt-16 text-slate-400">
           <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
             <div>
