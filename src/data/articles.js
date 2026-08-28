@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: '3d-gaussian-splatting-editing-cleaning-tools-guide',
+    path: '/3d-gaussian-splatting-editing-cleaning-tools-guide',
+    title: 'Editing and Cleaning 3D Gaussian Splats: Practical Workflows and Software',
+    description: 'Raw photogrammetry splats suffer from floating artifacts and background noise. Learn how to crop, transform, and optimize 3DGS point clouds for production engines.',
+    category: '3DGS Post-Processing & Editing',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'ifc-sg-regulatory-openbim-automated-code-checking-guide',
+    path: '/ifc-sg-regulatory-openbim-automated-code-checking-guide',
+    title: 'Automated Building Code Checking: Regulatory Compliance via IFC-SG Standard',
+    description: 'Explore how modern municipalities transition from 2D plan approvals to automated 3D OpenBIM verification using standardized regulatory IFC schemas.',
+    category: 'OpenBIM & Automated Compliance',
+    readTime: '10 min read'
+  },
+  {
+    slug: 'webgpu-render-bundles-draw-call-performance-guide',
+    path: '/webgpu-render-bundles-draw-call-performance-guide',
+    title: 'WebGPU Render Bundles: Eliminating Draw Call Overhead in Complex Web Scenes',
+    description: 'Discover how pre-recording GPU drawing commands with GPURenderBundle bypasses main-thread JavaScript execution bottlenecks in WebGPU.',
+    category: 'WebGPU Engine Architecture',
+    readTime: '8 min read'
+  },
+  {
     slug: 'ifc-mep-revit-civil-3d-pipe-clash-detection-guide',
     path: '/ifc-mep-revit-civil-3d-pipe-clash-detection-guide',
     title: 'Automating MEP Pipe Network Clash Detection in OpenBIM Pipelines',
