@@ -6,146 +6,148 @@ export default function HomePage() {
   const latestArticles = articles.slice(0, 10);
 
   return (
-    <main className="max-w-6xl mx-auto px-4 py-8 sm:py-12">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden text-center py-20 px-6 bg-slate-900 border border-slate-700 rounded-3xl mb-16 shadow-2xl">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#334155_1px,transparent_1px),linear-gradient(to_bottom,#334155_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-40"></div>
-        <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-blue-600/30 rounded-full blur-3xl pointer-events-none"></div>
+    <div className="bg-black min-h-screen text-slate-100">
+      <main className="max-w-6xl mx-auto px-4 py-8 sm:py-12">
+        {/* Hero Section */}
+        <section className="relative overflow-hidden text-center py-20 px-6 bg-zinc-950 border border-zinc-800 rounded-3xl mb-16 shadow-2xl">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-40"></div>
+          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div className="relative z-10 max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-300 bg-blue-950 border border-blue-700 px-4 py-1.5 rounded-full mb-6 shadow-md">
-            <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
-            Tech, Engineering & Digital Insights
+          <div className="relative z-10 max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-400 bg-zinc-900 border border-zinc-700 px-4 py-1.5 rounded-full mb-6 shadow-md">
+              <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+              Tech, Engineering & Digital Insights
+            </div>
+
+            <h1 className="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight text-white">
+              Insights, Guides & Technical Resources
+            </h1>
+
+            <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed mb-8 font-medium">
+              Exploring modern technology, architectural drafting, digital workflows, and practical engineering tools.
+            </p>
+
+            <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-bold text-white max-w-xl mx-auto">
+              <Link href="/digital-twin" className="bg-zinc-900 border border-blue-500/40 text-blue-400 px-3.5 py-1.5 rounded-xl shadow hover:bg-blue-950/40 transition">
+                🌐 Digital Twins & IoT
+              </Link>
+              <span className="bg-zinc-900 border border-zinc-800 px-3.5 py-1.5 rounded-xl shadow text-slate-300">📚 Technical Articles</span>
+              <span className="bg-zinc-900 border border-zinc-800 px-3.5 py-1.5 rounded-xl shadow text-slate-300">🏗️ CAD & Architecture</span>
+              <span className="bg-zinc-900 border border-zinc-800 px-3.5 py-1.5 rounded-xl shadow text-slate-300">🎮 3D & Game Dev</span>
+              <span className="bg-zinc-900 border border-zinc-800 px-3.5 py-1.5 rounded-xl shadow text-slate-300">⚙️ Engineering Tools</span>
+            </div>
           </div>
+        </section>
 
-          <h1 className="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight text-white">
-            Insights, Guides & Technical Resources
-          </h1>
-
-          <p className="text-base sm:text-lg text-slate-100 max-w-2xl mx-auto leading-relaxed mb-8 font-medium">
-            Exploring modern technology, architectural drafting, digital workflows, and practical engineering tools.
-          </p>
-
-          <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-bold text-white max-w-xl mx-auto">
-  <Link href="/digital-twin" className="bg-blue-950/80 border border-blue-600 text-blue-300 px-3.5 py-1.5 rounded-xl shadow hover:bg-blue-900 transition">
-    🌐 Digital Twins & IoT
-  </Link>
-  <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">📚 Technical Articles</span>
-  <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">🏗️ CAD & Architecture</span>
-  <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">🎮 3D & Game Dev</span>
-  <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">⚙️ Engineering Tools</span>
-</div>
-        </div>
-      </section>
-
-      {/* Dynamic Articles Grid (Latest 10 Articles) */}
-      <section className="mb-16">
-        <div className="flex items-center justify-between mb-8 border-b border-slate-700 pb-4">
-          <div>
-            <h2 className="text-2xl font-black text-white tracking-tight">Latest Articles & Technical Guides</h2>
-            <p className="text-sm font-medium text-slate-200">In-depth reads, industry standards, and step-by-step tutorials.</p>
-          </div>
-          <Link 
-            href="/blog" 
-            className="text-blue-400 text-sm font-bold hover:underline hidden sm:inline-block"
-          >
-            View All Articles &rarr;
-          </Link>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {latestArticles.map((article) => (
-            <div 
-              key={article.slug} 
-              className="p-6 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 transition-all duration-200 flex flex-col justify-between group shadow-md"
+        {/* Dynamic Articles Grid (Latest 10 Articles) */}
+        <section className="mb-16">
+          <div className="flex items-center justify-between mb-8 border-b border-zinc-800 pb-4">
+            <div>
+              <h2 className="text-2xl font-black text-white tracking-tight">Latest Articles & Technical Guides</h2>
+              <p className="text-sm font-medium text-slate-400">In-depth reads, industry standards, and step-by-step tutorials.</p>
+            </div>
+            <Link 
+              href="/blog" 
+              className="text-blue-400 text-sm font-bold hover:underline hidden sm:inline-block"
             >
-              <div>
-                <div className="flex items-center gap-2 text-xs font-bold text-blue-300 mb-3">
-                  <span className="bg-blue-950 border border-blue-700 px-2.5 py-1 rounded-md uppercase tracking-wider">{article.category}</span>
-                  <span className="text-slate-400">•</span>
-                  <span className="text-slate-200 font-semibold">{article.readTime}</span>
+              View All Articles &rarr;
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {latestArticles.map((article) => (
+              <div 
+                key={article.slug} 
+                className="p-6 border border-zinc-800 rounded-2xl bg-zinc-950 hover:border-blue-500/50 transition-all duration-200 flex flex-col justify-between group shadow-md"
+              >
+                <div>
+                  <div className="flex items-center gap-2 text-xs font-bold text-blue-400 mb-3">
+                    <span className="bg-zinc-900 border border-zinc-800 px-2.5 py-1 rounded-md uppercase tracking-wider">{article.category}</span>
+                    <span className="text-zinc-600">•</span>
+                    <span className="text-slate-300 font-semibold">{article.readTime}</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                    <Link href={article.path}>{article.title}</Link>
+                  </h3>
+                  <p className="text-slate-300 text-sm mb-6 leading-relaxed line-clamp-3">{article.description}</p>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-                  <Link href={article.path}>{article.title}</Link>
+                <Link 
+                  href={article.path} 
+                  className="text-blue-400 text-sm font-bold hover:text-blue-300 inline-flex items-center gap-1"
+                >
+                  Read Full Article <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                </Link>
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile View All Button */}
+          <div className="mt-8 text-center sm:hidden">
+            <Link 
+              href="/blog" 
+              className="inline-block bg-zinc-900 border border-zinc-800 text-white text-sm font-bold px-6 py-3 rounded-xl hover:bg-zinc-800 transition"
+            >
+              View All Articles &rarr;
+            </Link>
+          </div>
+        </section>
+
+        {/* Interactive Tools Section */}
+        <section className="mb-12">
+          <div className="flex items-center justify-between mb-8 border-b border-zinc-800 pb-4">
+            <div>
+              <h2 className="text-2xl font-black text-white tracking-tight">Interactive Web Tools & Projects</h2>
+              <p className="text-sm font-medium text-slate-400">Free online converters and digital asset showcases.</p>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-8 border border-zinc-800 rounded-2xl bg-zinc-950 hover:border-blue-500/50 shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div className="w-12 h-12 bg-zinc-900 text-blue-400 border border-zinc-800 rounded-2xl flex items-center justify-center font-bold text-xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                  📐
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  Universal Engineering Unit Converter
                 </h3>
-                <p className="text-slate-200 text-sm mb-6 leading-relaxed line-clamp-3">{article.description}</p>
+                <p className="text-slate-300 text-sm mb-6 leading-relaxed">
+                  Convert length, pressure, volume, area, and weight measurements with high precision.
+                </p>
               </div>
-              <Link 
-                href={article.path} 
-                className="text-blue-300 text-sm font-bold hover:text-blue-200 inline-flex items-center gap-1"
-              >
-                Read Full Article <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-              </Link>
-            </div>
-          ))}
-        </div>
-
-        {/* Mobile View All Button */}
-        <div className="mt-8 text-center sm:hidden">
-          <Link 
-            href="/blog" 
-            className="inline-block bg-slate-800 border border-slate-600 text-white text-sm font-bold px-6 py-3 rounded-xl hover:bg-slate-700 transition"
-          >
-            View All Articles &rarr;
-          </Link>
-        </div>
-      </section>
-
-      {/* Interactive Tools Section */}
-      <section className="mb-12">
-        <div className="flex items-center justify-between mb-8 border-b border-slate-700 pb-4">
-          <div>
-            <h2 className="text-2xl font-black text-white tracking-tight">Interactive Web Tools & Projects</h2>
-            <p className="text-sm font-medium text-slate-200">Free online converters and digital asset showcases.</p>
-          </div>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-8 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 shadow-lg transition-all duration-300 flex flex-col justify-between group">
-            <div>
-              <div className="w-12 h-12 bg-blue-950 text-blue-300 border border-blue-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-                📐
+              <div>
+                <Link 
+                  href="/tools/unit-converter" 
+                  className="inline-flex items-center gap-2 bg-blue-600 text-white text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-blue-500 transition-colors duration-200 shadow-lg shadow-blue-600/20"
+                >
+                  Open Tool &rarr;
+                </Link>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
-                Universal Engineering Unit Converter
-              </h3>
-              <p className="text-slate-200 text-sm mb-6 leading-relaxed">
-                Convert length, pressure, volume, area, and weight measurements with high precision.
-              </p>
             </div>
-            <div>
-              <Link 
-                href="/tools/unit-converter" 
-                className="inline-flex items-center gap-2 bg-blue-600 text-white text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-blue-500 transition-colors duration-200 shadow-lg shadow-blue-600/30"
-              >
-                Open Tool &rarr;
-              </Link>
+
+            <div className="p-8 border border-zinc-800 rounded-2xl bg-zinc-950 hover:border-blue-500/50 shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div className="w-12 h-12 bg-zinc-900 text-blue-400 border border-zinc-800 rounded-2xl flex items-center justify-center font-bold text-xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                  🎨
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  Digital Art & NFT Collections
+                </h3>
+                <p className="text-slate-300 text-sm mb-6 leading-relaxed">
+                  Explore curated Web3 digital artworks and concept collections minted on Ethereum.
+                </p>
+              </div>
+              <div>
+                <Link 
+                  href="/gallery" 
+                  className="inline-flex items-center gap-2 bg-zinc-900 border border-zinc-800 text-white text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-zinc-800 transition-colors duration-200"
+                >
+                  Explore Gallery &rarr;
+                </Link>
+              </div>
             </div>
           </div>
-
-          <div className="p-8 border border-slate-700 rounded-2xl bg-slate-900 hover:border-blue-400 shadow-lg transition-all duration-300 flex flex-col justify-between group">
-            <div>
-              <div className="w-12 h-12 bg-blue-950 text-blue-300 border border-blue-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-                🎨
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
-                Digital Art & NFT Collections
-              </h3>
-              <p className="text-slate-200 text-sm mb-6 leading-relaxed">
-                Explore curated Web3 digital artworks and concept collections minted on Ethereum.
-              </p>
-            </div>
-            <div>
-              <Link 
-                href="/gallery" 
-                className="inline-flex items-center gap-2 bg-slate-800 border border-slate-600 text-white text-sm font-bold px-5 py-2.5 rounded-xl hover:bg-slate-700 transition-colors duration-200"
-              >
-                Explore Gallery &rarr;
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
   );
 }

@@ -108,92 +108,94 @@ export default function UnitConverterPage() {
   const result = baseValue / toUnit.ratio;
 
   return (
-    <main className="max-w-5xl mx-auto px-4 py-12">
-      {/* Header */}
-      <div className="text-center mb-10">
-        <span className="text-xs font-bold uppercase tracking-wider text-blue-400 bg-blue-950 border border-blue-800/60 px-3 py-1 rounded-full mb-3 inline-block">
-          All-In-One Converter
-        </span>
-        <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight mb-3">
-          Universal Engineering Unit Converter
-        </h1>
-        <p className="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
-          Convert Length, Pressure, Area, Volume, and Weight measurements with technical precision.
-        </p>
-      </div>
-
-      {/* Main Converter Card */}
-      <div className="p-6 sm:p-8 bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl backdrop-blur-xl">
-        {/* Category Tabs */}
-        <div className="flex flex-wrap gap-2 mb-8 pb-6 border-b border-slate-800">
-          {UNIT_CATEGORIES.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => handleCategoryChange(cat.id)}
-              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 ${
-                selectedCategory.id === cat.id
-                  ? "bg-blue-600 text-white shadow-lg shadow-blue-600/30 scale-105"
-                  : "bg-slate-800/60 text-slate-400 hover:bg-slate-800 hover:text-white"
-              }`}
-            >
-              <span>{cat.icon}</span>
-              <span>{cat.name}</span>
-            </button>
-          ))}
+    <div className="bg-black min-h-screen text-slate-100">
+      <main className="max-w-5xl mx-auto px-4 py-12">
+        {/* Header */}
+        <div className="text-center mb-10">
+          <span className="text-xs font-bold uppercase tracking-wider text-blue-400 bg-zinc-900 border border-zinc-800 px-3 py-1 rounded-full mb-3 inline-block">
+            All-In-One Converter
+          </span>
+          <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight mb-3">
+            Universal Engineering Unit Converter
+          </h1>
+          <p className="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
+            Convert Length, Pressure, Area, Volume, and Weight measurements with technical precision.
+          </p>
         </div>
 
-        {/* Inputs Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
-          {/* FROM */}
-          <div className="md:col-span-5 bg-slate-950/60 p-5 rounded-2xl border border-slate-800">
-            <label className="block text-xs font-extrabold text-slate-400 uppercase tracking-wider mb-2">From</label>
-            <input
-              type="number"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              className="w-full bg-slate-900 border border-slate-700 focus:border-blue-500 rounded-xl px-4 py-3 text-xl font-bold text-white outline-none transition mb-3"
-              placeholder="0"
-            />
-            <select
-              value={fromUnit.id}
-              onChange={(e) => setFromUnit(selectedCategory.units.find((u) => u.id === e.target.value))}
-              className="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-4 py-3 text-sm font-medium outline-none focus:border-blue-500 transition cursor-pointer"
-            >
-              {selectedCategory.units.map((u) => (
-                <option key={u.id} value={u.id}>{u.name}</option>
-              ))}
-            </select>
+        {/* Main Converter Card */}
+        <div className="p-6 sm:p-8 bg-zinc-950 border border-zinc-800 rounded-3xl shadow-2xl backdrop-blur-xl">
+          {/* Category Tabs */}
+          <div className="flex flex-wrap gap-2 mb-8 pb-6 border-b border-zinc-800">
+            {UNIT_CATEGORIES.map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() => handleCategoryChange(cat.id)}
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 ${
+                  selectedCategory.id === cat.id
+                    ? "bg-blue-600 text-white shadow-lg shadow-blue-600/20 scale-105"
+                    : "bg-zinc-900 text-slate-400 border border-zinc-800/80 hover:bg-zinc-800 hover:text-white"
+                }`}
+              >
+                <span>{cat.icon}</span>
+                <span>{cat.name}</span>
+              </button>
+            ))}
           </div>
 
-          {/* SWAP BUTTON */}
-          <div className="md:col-span-2 flex justify-center py-2">
-            <button
-              onClick={handleSwap}
-              className="w-12 h-12 rounded-2xl bg-slate-800 hover:bg-blue-600 text-slate-300 hover:text-white border border-slate-700 flex items-center justify-center transition-all duration-200 shadow-md hover:rotate-180"
-              title="Swap Units"
-            >
-              🔄
-            </button>
-          </div>
-
-          {/* TO (RESULT) */}
-          <div className="md:col-span-5 bg-slate-950/60 p-5 rounded-2xl border border-slate-800">
-            <label className="block text-xs font-extrabold text-blue-400 uppercase tracking-wider mb-2">To (Result)</label>
-            <div className="w-full bg-slate-900 border border-blue-900/50 rounded-xl px-4 py-3 text-xl font-extrabold text-blue-400 mb-3 truncate">
-              {isNaN(result) ? "0" : Number(result.toFixed(6))}
+          {/* Inputs Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+            {/* FROM */}
+            <div className="md:col-span-5 bg-black/60 p-5 rounded-2xl border border-zinc-800">
+              <label className="block text-xs font-extrabold text-slate-400 uppercase tracking-wider mb-2">From</label>
+              <input
+                type="number"
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                className="w-full bg-zinc-900 border border-zinc-700 focus:border-blue-500 rounded-xl px-4 py-3 text-xl font-bold text-white outline-none transition mb-3"
+                placeholder="0"
+              />
+              <select
+                value={fromUnit.id}
+                onChange={(e) => setFromUnit(selectedCategory.units.find((u) => u.id === e.target.value))}
+                className="w-full bg-zinc-900 border border-zinc-700 text-slate-200 rounded-xl px-4 py-3 text-sm font-medium outline-none focus:border-blue-500 transition cursor-pointer"
+              >
+                {selectedCategory.units.map((u) => (
+                  <option key={u.id} value={u.id}>{u.name}</option>
+                ))}
+              </select>
             </div>
-            <select
-              value={toUnit.id}
-              onChange={(e) => setToUnit(selectedCategory.units.find((u) => u.id === e.target.value))}
-              className="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-4 py-3 text-sm font-medium outline-none focus:border-blue-500 transition cursor-pointer"
-            >
-              {selectedCategory.units.map((u) => (
-                <option key={u.id} value={u.id}>{u.name}</option>
-              ))}
-            </select>
+
+            {/* SWAP BUTTON */}
+            <div className="md:col-span-2 flex justify-center py-2">
+              <button
+                onClick={handleSwap}
+                className="w-12 h-12 rounded-2xl bg-zinc-900 hover:bg-blue-600 text-slate-300 hover:text-white border border-zinc-800 flex items-center justify-center transition-all duration-200 shadow-md hover:rotate-180"
+                title="Swap Units"
+              >
+                🔄
+              </button>
+            </div>
+
+            {/* TO (RESULT) */}
+            <div className="md:col-span-5 bg-black/60 p-5 rounded-2xl border border-zinc-800">
+              <label className="block text-xs font-extrabold text-blue-400 uppercase tracking-wider mb-2">To (Result)</label>
+              <div className="w-full bg-zinc-900 border border-blue-500/30 rounded-xl px-4 py-3 text-xl font-extrabold text-blue-400 mb-3 truncate">
+                {isNaN(result) ? "0" : Number(result.toFixed(6))}
+              </div>
+              <select
+                value={toUnit.id}
+                onChange={(e) => setToUnit(selectedCategory.units.find((u) => u.id === e.target.value))}
+                className="w-full bg-zinc-900 border border-zinc-700 text-slate-200 rounded-xl px-4 py-3 text-sm font-medium outline-none focus:border-blue-500 transition cursor-pointer"
+              >
+                {selectedCategory.units.map((u) => (
+                  <option key={u.id} value={u.id}>{u.name}</option>
+                ))}
+              </select>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }
