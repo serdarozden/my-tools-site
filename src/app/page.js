@@ -27,12 +27,14 @@ export default function HomePage() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-bold text-white max-w-xl mx-auto">
-            <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">📚 Technical Articles</span>
-            <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">🏗️ CAD & Architecture</span>
-            <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">🎮 3D & Game Dev</span>
-            <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">⚙️ Engineering Tools</span>
-            <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">🖼️ Web3 & Digital Art</span>
-          </div>
+  <Link href="/digital-twin" className="bg-blue-950/80 border border-blue-600 text-blue-300 px-3.5 py-1.5 rounded-xl shadow hover:bg-blue-900 transition">
+    🌐 Digital Twins & IoT
+  </Link>
+  <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">📚 Technical Articles</span>
+  <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">🏗️ CAD & Architecture</span>
+  <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">🎮 3D & Game Dev</span>
+  <span className="bg-slate-800 border border-slate-600 px-3.5 py-1.5 rounded-xl shadow">⚙️ Engineering Tools</span>
+</div>
         </div>
       </section>
 

@@ -1,5 +1,37 @@
 export const articles = [
  {
+    slug: 'open-cascade-wasm-web-cad-kernel-guide',
+    path: '/open-cascade-wasm-web-cad-kernel-guide',
+    title: 'Compiling Open CASCADE to WebAssembly: Building Custom Web-Based CAD Kernels',
+    description: 'Bridging native C++ geometric modeling engines with modern web browsers to perform high-precision B-Rep operations via Emscripten.',
+    category: '3D & Web Graphics',
+    readTime: '14 min read'
+  },
+  {
+    slug: 'mqtt-websocket-realtime-3d-twin-guide',
+    path: '/digital-twin/mqtt-websocket-realtime-3d-twin-guide',
+    title: 'Streaming Real-Time IoT Telemetry to 3D Digital Twins via MQTT & WebSockets',
+    description: 'Learn how to bridge MQTT broker telemetry streams into WebGL and WebGPU viewports for live building monitoring and anomaly detection.',
+    category: 'IoT & WebSockets',
+    readTime: '9 min read'
+  },
+  {
+    slug: 'gis-citygml-spatial-digital-twin-guide',
+    path: '/digital-twin/gis-citygml-spatial-digital-twin-guide',
+    title: 'Building City-Scale Digital Twins: CityGML to OGC 3D Tiles Pipelines',
+    description: 'Discover how municipal planners convert complex CityGML semantic data into lightweight 3D Tiles for seamless web browser visualization.',
+    category: 'Geospatial & Urban Twins',
+    readTime: '10 min read'
+  },
+  {
+    slug: 'industrial-predictive-maintenance-3d-web-guide',
+    path: '/digital-twin/industrial-predictive-maintenance-3d-web-guide',
+    title: 'Interactive Industrial Twins: Visualizing Predictive Maintenance in WebGL',
+    description: 'Learn how industrial facilities map ML-based failure predictions onto 3D assembly models for rapid maintenance intervention.',
+    category: 'Industrial Digital Twins',
+    readTime: '8 min read'
+  },
+  {
     slug: '3d-gaussian-splatting-editing-cleaning-tools-guide',
     path: '/3d-gaussian-splatting-editing-cleaning-tools-guide',
     title: 'Editing and Cleaning 3D Gaussian Splats: Practical Workflows and Software',

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Script from 'next/script';
 import { Inter } from 'next/font/google';
 
-// Font kaymasını (CLS) sıfırlayan Next.js font optimizasyonu
+// Font kaymasını (CLS) önleyen optimizasyon
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       <head />
       <body className="bg-slate-950 text-slate-300 flex flex-col min-h-screen font-sans selection:bg-blue-600 selection:text-white">
         
-        {/* AdSense Script'i asenkron ve gelemeyen kaynakları bloklamadan yükle */}
+        {/* AdSense Script'i */}
         <Script
           id="google-adsense"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9166188896657946"
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
 
-        {/* Header alanına sabit yükseklik (h-16 = 64px) vererek kaymayı önlüyoruz */}
+        {/* Header / Navbar */}
         <header className="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50 h-16 min-h-[64px]">
           <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
             <Link 
@@ -44,8 +44,17 @@ export default function RootLayout({ children }) {
               <span>Back to Home</span>
             </Link>
             
-            <nav className="flex items-center gap-6 text-sm font-medium text-slate-400">
-              <Link href="/tools/unit-converter" className="hover:text-blue-400 transition">
+            <nav className="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm font-medium text-slate-400">
+              {/* Digital Twin Hub Vurgulu Buton */}
+              <Link 
+                href="/digital-twin" 
+                className="bg-blue-600/20 text-blue-400 border border-blue-500/40 px-3 py-1 rounded-full text-xs font-bold hover:bg-blue-600/40 transition-all flex items-center gap-1.5 shadow-sm hover:scale-105"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>
+                <span>Digital Twin Hub</span>
+              </Link>
+
+              <Link href="/tools/unit-converter" className="hover:text-blue-400 transition hidden sm:inline-block">
                 Unit Converter
               </Link>
               <Link href="/blog" className="hover:text-blue-400 transition">
