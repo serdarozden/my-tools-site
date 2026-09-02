@@ -7,6 +7,14 @@ export const metadata = {
 
 const digitalTwinArticles = [
   {
+    slug: 'industrial-opc-ua-threejs-telemetry-pipeline-guide',
+    title: 'Real-Time Industrial Digital Twins: OPC UA to Three.js Telemetry Pipeline',
+    description: 'Connecting industrial factory PLCs to 3D web applications by converting binary OPC UA telemetry into WebSocket streams for real-time 3D SCADA visualization.',
+    category: 'Digital Twin & Telemetry',
+    readTime: '15 min read',
+    date: 'Aug 2026',
+  },
+  {
     slug: 'mqtt-websocket-realtime-3d-twin-guide',
     title: 'Streaming Real-Time IoT Telemetry to 3D Digital Twins via MQTT & WebSockets',
     description: 'Learn how to bridge MQTT broker telemetry streams into WebGL and WebGPU viewports for live building monitoring and anomaly detection.',
@@ -23,13 +31,14 @@ const digitalTwinArticles = [
     date: 'Aug 2026',
   },
   {
-    slug: 'industrial-predictive-maintenance-3d-web-guide',
-    title: 'Interactive Industrial Twins: Visualizing Predictive Maintenance in WebGL',
-    description: 'Learn how industrial facilities map ML-based failure predictions onto 3D assembly models for rapid maintenance intervention.',
-    category: 'Industrial Digital Twins',
-    readTime: '8 min read',
-    date: 'Aug 2026',
-  },
+  slug: 'hvac-smart-building-3d-digital-twin-guide',
+  title: 'Smart Building Digital Twins: Real-Time HVAC & Energy Spatial Visualization in WebGL',
+  description: 'Integrating Building Management System (BMS) telemetry with 3D WebGL building models for real-time thermal mapping and energy optimization.',
+  category: 'Smart Buildings',
+  readTime: '11 min read',
+  date: 'Sep 2026',
+}
+
 ];
 
 export default function DigitalTwinHubPage() {
@@ -90,6 +99,7 @@ export default function DigitalTwinHubPage() {
                 </div>
 
                 <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-3 leading-snug">
+                  {/* DOĞRU LINK YAPISI: /digital-twin/ eklenmiştir */}
                   <Link href={`/digital-twin/${article.slug}`}>
                     <span className="absolute inset-0" aria-hidden="true" />
                     {article.title}

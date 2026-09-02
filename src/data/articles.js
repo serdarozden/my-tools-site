@@ -1,5 +1,45 @@
 export const articles = [
  {
+  slug: 'hvac-smart-building-3d-digital-twin-guide',
+  path: '/digital-twin/hvac-smart-building-3d-digital-twin-guide',
+  title: 'Smart Building Digital Twins: Real-Time HVAC & Energy Spatial Visualization in WebGL',
+  description: 'Integrating Building Management System (BMS) telemetry with 3D WebGL building models for real-time thermal mapping and energy optimization.',
+  category: 'Smart Buildings',
+  readTime: '11 min read'
+},
+{
+  slug: 'dxf-parser-javascript-web-cad-rendering-guide',
+  path: '/dxf-parser-javascript-web-cad-rendering-guide',
+  title: 'Parsing and Rendering AutoCAD DXF Files in Web Browsers with JavaScript',
+  description: 'A technical deep dive into parsing ASCII DXF entities in client-side JavaScript and rendering vector CAD geometry using Three.js and HTML5 Canvas.',
+  category: 'Web CAD',
+  readTime: '11 min read'
+},
+{
+  slug: 'webgl-fragment-shader-pbr-lighting-math-guide',
+  path: '/webgl-fragment-shader-pbr-lighting-math-guide',
+  title: 'Writing Custom PBR Shaders in WebGL: Cook-Torrance BRDF Math',
+  description: 'An architectural guide on implementing physically based rendering equations, Fresnel-Schlick, and GGX distribution functions in GLSL shaders.',
+  category: 'Graphics Programming',
+  readTime: '13 min read'
+},
+{
+  slug: 'ifcjs-openbim-web-browser-cad-viewer-guide',
+  path: '/ifcjs-openbim-web-browser-cad-viewer-guide',
+  title: 'Building Browser-Based OpenBIM Viewers with IFC.js and WebAssembly',
+  description: 'How to load, query, and render architectural IFC models in client-side web browsers using IFC.js and spatial structure trees.',
+  category: 'OpenBIM',
+  readTime: '12 min read'
+},
+{
+  slug: 'gltf-meshopt-draco-compression-pipeline-guide',
+  path: '/gltf-meshopt-draco-compression-pipeline-guide',
+  title: 'Optimizing 3D Web Assets: Draco vs Meshoptimizer (meshopt) Pipeline',
+  description: 'An engineering comparison of Draco geometric compression versus Meshoptimizer for accelerating glTF/GLB web 3D load times.',
+  category: 'Web Performance',
+  readTime: '10 min read'
+},
+{
     slug: 'open-cascade-wasm-web-cad-kernel-guide',
     path: '/open-cascade-wasm-web-cad-kernel-guide',
     title: 'Compiling Open CASCADE to WebAssembly: Building Custom Web-Based CAD Kernels',
