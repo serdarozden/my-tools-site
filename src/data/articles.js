@@ -1,5 +1,21 @@
 export const articles = [
  {
+    slug: 'nextjs-server-actions-edge-caching-performance-guide',
+    path: '/nextjs-server-actions-edge-caching-performance-guide',
+    title: 'High-Performance Next.js: Server Actions, Edge Caching, and Optimistic UI',
+    description: 'Architecting ultra-low latency React applications by combining Server Actions with Edge runtime revalidation and zero-bundle-size mutations.',
+    category: 'Next.js & Web Performance',
+    readTime: '12 min read'
+  },
+  {
+    slug: 'webgpu-point-cloud-large-scale-digital-twin-guide',
+    path: '/digital-twin/webgpu-point-cloud-large-scale-digital-twin-guide',
+    title: 'Massive Scale Digital Twins: WebGPU Compute Shaders & LiDAR Point Cloud Rendering',
+    description: 'Overcoming WebGL memory limitations by utilizing WebGPU compute shaders and octree spatial partitioning to render billion-point CAD assemblies directly in the browser.',
+    category: 'WebGPU & 3D Engineering',
+    readTime: '14 min read'
+  },
+  {
   slug: 'hvac-smart-building-3d-digital-twin-guide',
   path: '/digital-twin/hvac-smart-building-3d-digital-twin-guide',
   title: 'Smart Building Digital Twins: Real-Time HVAC & Energy Spatial Visualization in WebGL',

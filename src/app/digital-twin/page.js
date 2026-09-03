@@ -6,7 +6,15 @@ export const metadata = {
 };
 
 const digitalTwinArticles = [
-  {
+{
+  slug: 'webgpu-point-cloud-large-scale-digital-twin-guide',
+  title: 'Massive Scale Digital Twins: WebGPU Compute Shaders & LiDAR Point Cloud Rendering',
+  description: 'Overcoming WebGL memory limitations by utilizing WebGPU compute shaders and octree spatial partitioning to render billion-point CAD assemblies directly in the browser.',
+  category: 'WebGPU & 3D Engineering',
+  readTime: '14 min read',
+  date: 'Sep 2026',
+},
+{
     slug: 'industrial-opc-ua-threejs-telemetry-pipeline-guide',
     title: 'Real-Time Industrial Digital Twins: OPC UA to Three.js Telemetry Pipeline',
     description: 'Connecting industrial factory PLCs to 3D web applications by converting binary OPC UA telemetry into WebSocket streams for real-time 3D SCADA visualization.',
