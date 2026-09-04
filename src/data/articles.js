@@ -1,5 +1,21 @@
 export const articles = [
  {
+    slug: 'react-server-components-streaming-ssr-guide',
+    path: '/react-server-components-streaming-ssr-guide',
+    title: 'Mastering React Server Components & Suspense Streaming in Next.js',
+    description: 'Deconstructing zero-bundle-size server components, progressive HTML streaming, and selective client hydration for maximum rendering throughput.',
+    category: 'React & Architecture',
+    readTime: '10 min read'
+  },
+  {
+    slug: 'nextjs-core-web-vitals-inp-optimization-guide',
+    path: '/nextjs-core-web-vitals-inp-optimization-guide',
+    title: 'Optimizing Core Web Vitals in Next.js: Tackling INP, LCP, and Layout Shifts',
+    description: 'Systematic strategies for minimizing long main-thread tasks, eliminating Cumulative Layout Shift (CLS), and optimizing Interaction to Next Paint (INP) latency.',
+    category: 'Web Vitals & Performance',
+    readTime: '13 min read'
+  },
+  {
     slug: 'nextjs-server-actions-edge-caching-performance-guide',
     path: '/nextjs-server-actions-edge-caching-performance-guide',
     title: 'High-Performance Next.js: Server Actions, Edge Caching, and Optimistic UI',
