@@ -1,5 +1,45 @@
 export const articles = [
  {
+    slug: 'gltf-meshopt-vs-draco-compression-performance-benchmark-guide',
+    path: '/gltf-meshopt-vs-draco-compression-performance-benchmark-guide',
+    title: 'Meshopt vs Draco Compression: Evaluating WebGL Performance and Load Latency',
+    description: 'A comprehensive technical evaluation of Google Draco and Meshoptimizer algorithms for compressing real-time 3D glTF assets on the web.',
+    category: '3D Graphics & WebGL',
+    readTime: '11 min read'
+  },
+  {
+    slug: 'bcf-issue-workflow-software-openbim-coordination-guide',
+    path: '/bcf-issue-workflow-software-openbim-coordination-guide',
+    title: 'BCF Issue Workflow Implementation in Enterprise OpenBIM Architecture',
+    description: 'Streamlining architectural clash detection management, BCF API integration, and multi-discipline coordination without exchanging monolithic IFC files.',
+    category: 'BIM Architecture & Standards',
+    readTime: '12 min read'
+  },
+  {
+    slug: 'openbim-data-formats-ifc-bcf-bsdd-technical-guide',
+    path: '/openbim-data-formats-ifc-bcf-bsdd-technical-guide',
+    title: 'Understanding OpenBIM Data Standards: IFC4.3, bSDD, BCF, and COBie',
+    description: 'Architectural analysis of vendor-neutral digital building formats powering modern AEC software interoperability and lifecycle asset management.',
+    category: 'OpenBIM Infrastructure',
+    readTime: '14 min read'
+  },
+  {
+    slug: 'browser-based-and-command-line-bim-model-checking-guide',
+    path: '/browser-based-and-command-line-bim-model-checking-guide',
+    title: 'Automating OpenBIM Quality Assurance: Browser-Based vs CLI IFC Validation',
+    description: 'Building client-side web interfaces and headless command-line pipelines for instant IFC regulatory rule checking and metadata validation.',
+    category: 'Automated Quality Assurance',
+    readTime: '10 min read'
+  },
+  {
+    slug: 'defense-and-distribution-center-bim-validation-architecture-guide',
+    path: '/defense-and-distribution-center-bim-validation-architecture-guide',
+    title: 'High-Security OpenBIM Validation: Defense Facilities and Logistics Hubs',
+    description: 'Architectural strategies for implementing air-gapped model verification, automated clearance compliance, and high-performance logistical facility checking.',
+    category: 'Specialized BIM Infrastructure',
+    readTime: '13 min read'
+  },
+  {
     slug: 'react-server-components-streaming-ssr-guide',
     path: '/react-server-components-streaming-ssr-guide',
     title: 'Mastering React Server Components & Suspense Streaming in Next.js',
