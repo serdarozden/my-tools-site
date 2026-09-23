@@ -20,21 +20,15 @@ export default async function sitemap() {
     },
   ];
 
-  // 2. Dinamik Makale Sayfaları
+  // 2. Dinamik Makale Sayfaları (Doğrudan kök dizin linkleri)
   const articleRoutes = articles.map((article) => {
     // path başında '/' kontrolü
     const formattedPath = article.path.startsWith('/') 
       ? article.path 
       : `/${article.path}`;
 
-    // Eğer article.path zaten '/blog/...' içeriyorsa doğrudan ekler,
-    // içermiyorsa '/blog' takısını otomatik ekler:
-    const fullPath = formattedPath.startsWith('/blog') 
-      ? formattedPath 
-      : `/blog${formattedPath}`;
-
     return {
-      url: `${baseUrl}${fullPath}`,
+      url: `${baseUrl}${formattedPath}`, // /blog takısı kaldırıldı, doğrudan domain.com/makale-slug şeklinde
       lastModified: article.updatedAt ? new Date(article.updatedAt) : currentDate,
       changeFrequency: 'weekly',
       priority: 0.8,
