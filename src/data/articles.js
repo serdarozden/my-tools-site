@@ -1,5 +1,45 @@
 export const articles = [
  {
+    slug: 'realtime-webgl-occlusion-culling-performance-guide',
+    path: '/realtime-webgl-occlusion-culling-performance-guide',
+    title: 'High-Performance Occlusion Culling in Large-Scale WebGL Scenes',
+    description: 'Eliminating overdraw and hidden geometry rendering using GPU queries, Bounding Volume Hierarchies (BVH), and Hierarchical Z-Buffer (HZB) culling.',
+    category: 'WebGL & Rendering Performance',
+    readTime: '12 min read'
+  },
+  {
+    slug: 'custom-webgl-shaders-cad-technical-visualization-guide',
+    path: '/custom-webgl-shaders-cad-technical-visualization-guide',
+    title: 'Authoring Custom GLSL Shaders for CAD and Technical WebGL Applications',
+    description: 'Techniques for dynamic plane clipping, screen-space antialiased wireframes, and false-color stress analysis visualization in web browsers.',
+    category: 'Shader Programming & GLSL',
+    readTime: '14 min read'
+  },
+  {
+    slug: 'streaming-large-ifc-models-chunked-websockets-guide',
+    path: '/streaming-large-ifc-models-chunked-websockets-guide',
+    title: 'Progressive IFC Model Streaming Architecture for Web-Based BIM',
+    description: 'Overcoming browser memory limits by splitting massive IFC building files into geometry-aware binary chunks for background deserialization.',
+    category: 'Data Streaming & Architecture',
+    readTime: '13 min read'
+  },
+  {
+    slug: 'nextjs-webgl-state-management-zustand-r3f-guide',
+    path: '/nextjs-webgl-state-management-zustand-r3f-guide',
+    title: 'Managing Interactive 3D State in Next.js with Zustand and React Three Fiber',
+    description: 'Preventing unneeded React re-renders while syncing DOM UI controls with high-frequency 60 FPS WebGL canvas animations.',
+    category: 'React & WebGL State',
+    readTime: '11 min read'
+  },
+  {
+    slug: 'webgpu-compute-shaders-realtime-physics-simulation-guide',
+    path: '/webgpu-compute-shaders-realtime-physics-simulation-guide',
+    title: 'Unlocking GPU Parallelism: WebGPU Compute Shaders for Web Physics Engines',
+    description: 'Building massively parallel physics solvers in WGSL to simulate millions of active particles and rigid body collisions directly in browser viewports.',
+    category: 'WebGPU & Compute Graphics',
+    readTime: '15 min read'
+  },
+  {
     slug: 'gltf-meshopt-vs-draco-compression-performance-benchmark-guide',
     path: '/gltf-meshopt-vs-draco-compression-performance-benchmark-guide',
     title: 'Meshopt vs Draco Compression: Evaluating WebGL Performance and Load Latency',
