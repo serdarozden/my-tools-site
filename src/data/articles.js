@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'realtime-3d-gaussian-splatting-webgl-webgpu-guide',
+    path: '/realtime-3d-gaussian-splatting-webgl-webgpu-guide',
+    title: 'Real-Time 3D Gaussian Splatting Pipeline for Modern Web Viewers',
+    description: 'Architecting high-fidelity neural radiance field alternatives using GPU radix sorting and WebGPU compute dispatches in web browsers.',
+    category: 'Photorealistic Web3D',
+    readTime: '13 min read'
+  },
+  {
+    slug: 'cascaded-shadow-maps-webgl-realtime-rendering-guide',
+    path: '/cascaded-shadow-maps-webgl-realtime-rendering-guide',
+    title: 'Cascaded Shadow Mapping Architecture for Large-Scale WebGL Viewports',
+    description: 'Eliminating pixelated shadow edges and perspective aliasing in large architectural scenes through frustum splitting and PCF filtering.',
+    category: 'WebGL Lighting & Shadows',
+    readTime: '11 min read'
+  },
+  {
+    slug: 'serverless-ifc-metadata-extraction-nodejs-wasm-guide',
+    path: '/serverless-ifc-metadata-extraction-nodejs-wasm-guide',
+    title: 'High-Speed Serverless IFC Data Extraction using C++ Compiled WebAssembly',
+    description: 'Extracting spatial hierarchy, material quantities, and custom Property Sets (Psets) from IFC models inside headless AWS Lambda and Vercel functions.',
+    category: 'Serverless & BIM Data',
+    readTime: '12 min read'
+  },
+  {
     slug: 'realtime-webgl-occlusion-culling-performance-guide',
     path: '/realtime-webgl-occlusion-culling-performance-guide',
     title: 'High-Performance Occlusion Culling in Large-Scale WebGL Scenes',
