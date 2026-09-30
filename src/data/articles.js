@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'webgl-webgpu-memory-management-large-models-guide',
+    path: '/webgl-webgpu-memory-management-large-models-guide',
+    title: 'Advanced WebGL & WebGPU VRAM Management for Complex 3D Datasets',
+    description: 'Preventing context loss and browser crashes through explicit buffer disposal, dynamic instantiation, and GPU memory pooling.',
+    category: 'GPU Memory & Optimization',
+    readTime: '12 min read'
+  },
+  {
+    slug: 'dwg-dxf-to-webgl-data-pipeline-architecture-guide',
+    path: '/dwg-dxf-to-webgl-data-pipeline-architecture-guide',
+    title: 'Architecting High-Speed DWG and DXF Translation Pipelines for Web Viewers',
+    description: 'Converting complex AutoCAD CAD entity structures, polylines, hatch patterns, and block references into high-performance web graphics.',
+    category: 'CAD Data Pipeline',
+    readTime: '13 min read'
+  },
+  {
+    slug: 'browser-based-structural-fea-solver-webgpu-guide',
+    path: '/browser-based-structural-fea-solver-webgpu-guide',
+    title: 'Real-Time Structural FEA Simulation Engine in Web Browsers',
+    description: 'Solving large stiffness matrix systems using Rust compiled to WebAssembly combined with WebGPU matrix operations.',
+    category: 'Engineering Simulations & WebGPU',
+    readTime: '14 min read'
+  },
+  {
     slug: 'realtime-3d-gaussian-splatting-webgl-webgpu-guide',
     path: '/realtime-3d-gaussian-splatting-webgl-webgpu-guide',
     title: 'Real-Time 3D Gaussian Splatting Pipeline for Modern Web Viewers',
