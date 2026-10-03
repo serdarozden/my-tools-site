@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'webgpu-compute-shaders-vs-webgl-fragment-shaders-performance',
+    path: '/webgpu-compute-shaders-vs-webgl-fragment-shaders-performance',
+    title: 'WebGPU Compute Shaders vs. WebGL Fragment Shaders: Architecture & Performance',
+    description: 'Evaluating GPGPU compute limitations in WebGL against raw WGSL parallel execution models for heavy web-based computations.',
+    category: 'WebGPU & Architecture',
+    readTime: '12 min read'
+  },
+  {
+    slug: 'gltf-draco-vs-meshopt-compression-performance-guide',
+    path: '/gltf-draco-vs-meshopt-compression-performance-guide',
+    title: 'Draco vs. Meshopt Compression: Optimizing glTF Models for Fast Web Loading',
+    description: 'Balancing network transfer file sizes against client-side WebAssembly CPU decompression overhead for large 3D assets.',
+    category: 'Asset Optimization & 3D Formats',
+    readTime: '10 min read'
+  },
+  {
+    slug: 'webgl-level-of-detail-lod-progressive-mesh-guide',
+    path: '/webgl-level-of-detail-lod-progressive-mesh-guide',
+    title: 'Implementing Level of Detail (LOD) Architectures in WebGL',
+    description: 'Dynamically adjusting geometric complexity based on camera distance to maintain high frame rates across large architectural and CAD scenes.',
+    category: 'WebGL Performance Optimization',
+    readTime: '11 min read'
+  },
+  {
     slug: 'webgl-webgpu-memory-management-large-models-guide',
     path: '/webgl-webgpu-memory-management-large-models-guide',
     title: 'Advanced WebGL & WebGPU VRAM Management for Complex 3D Datasets',
