@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'webgpu-hardware-accelerated-ray-tracing-guide',
+    path: '/webgpu-hardware-accelerated-ray-tracing-guide',
+    title: 'Hardware-Accelerated Web Ray Tracing Architecture in WebGPU',
+    description: 'Building real-time path tracers in browsers using Bottom-Level (BLAS) and Top-Level Acceleration Structures (TLAS) in WGSL.',
+    category: 'WebGPU & Advanced Rendering',
+    readTime: '14 min read'
+  },
+  {
+    slug: 'custom-pbr-sheen-anisotropy-shaders-webgl-guide',
+    path: '/custom-pbr-sheen-anisotropy-shaders-webgl-guide',
+    title: 'Authoring PBR Sheen and Anisotropy Shaders for Textile & Industrial WebGL',
+    description: 'Simulating complex microfacet light scattering for cloth, satin, and brushed metallic surfaces in modern web viewports.',
+    category: 'Shaders & Materials',
+    readTime: '11 min read'
+  },
+  {
+    slug: 'openbim-bcf-api-issue-tracking-web-integration-guide',
+    path: '/openbim-bcf-api-issue-tracking-web-integration-guide',
+    title: 'Integrating OpenBIM BCF API for Web-Based Issue Collaboration',
+    description: 'Connecting 3D WebGL model viewports with standardized Building Collaboration Format (BCF) workflows for real-time site coordination.',
+    category: 'BIM Standards & Web APIs',
+    readTime: '12 min read'
+  },
+  {
     slug: 'webgpu-compute-shaders-vs-webgl-fragment-shaders-performance',
     path: '/webgpu-compute-shaders-vs-webgl-fragment-shaders-performance',
     title: 'WebGPU Compute Shaders vs. WebGL Fragment Shaders: Architecture & Performance',
