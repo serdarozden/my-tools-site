@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'webgl-msdf-text-rendering-performance-guide',
+    path: '/webgl-msdf-text-rendering-performance-guide',
+    title: 'Resolution-Independent Vector Text Rendering in WebGL via MSDF',
+    description: 'Rendering thousands of crisp dimension labels, tags, and annotations inside 3D CAD viewports without DOM overlays or blurry texture maps.',
+    category: 'WebGL Typography & UI',
+    readTime: '11 min read'
+  },
+  {
+    slug: 'webgpu-parallel-mesh-decimation-simplification-guide',
+    path: '/webgpu-parallel-mesh-decimation-simplification-guide',
+    title: 'GPU-Driven Mesh Decimation Pipeline with WebGPU Compute Shaders',
+    description: 'Accelerating polygon reduction on massive 3D models using parallel Quadric Error Metric (QEM) evaluation in browser WGSL compute passes.',
+    category: 'WebGPU & Geometry Algorithms',
+    readTime: '13 min read'
+  },
+  {
+    slug: 'grpc-web-protocol-buffers-3d-data-streaming-guide',
+    path: '/grpc-web-protocol-buffers-3d-data-streaming-guide',
+    title: 'High-Performance 3D Streaming using gRPC-Web and Binary Protobufs',
+    description: 'Replacing verbose JSON payloads with strictly typed binary Protocol Buffers to accelerate network streaming of large CAD and BIM datasets.',
+    category: 'Network Protocols & Web3D',
+    readTime: '12 min read'
+  },
+  {
     slug: 'webgpu-hardware-accelerated-ray-tracing-guide',
     path: '/webgpu-hardware-accelerated-ray-tracing-guide',
     title: 'Hardware-Accelerated Web Ray Tracing Architecture in WebGPU',
