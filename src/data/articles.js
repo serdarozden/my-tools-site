@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'webgl-screen-space-ambient-occlusion-ssao-hbao-guide',
+    path: '/webgl-screen-space-ambient-occlusion-ssao-hbao-guide',
+    title: 'Implementing Real-Time SSAO and HBAO+ Pipelines in WebGL Viewports',
+    description: 'Enhancing geometric depth perception and contact shadowing in CAD and architectural WebGL scenes using G-Buffer depth and normal passes.',
+    category: 'Post-Processing & Lighting',
+    readTime: '12 min read'
+  },
+  {
+    slug: 'streaming-massive-point-clouds-octree-potree-webgl-guide',
+    path: '/streaming-massive-point-clouds-octree-potree-webgl-guide',
+    title: 'Progressive Streaming of Multi-Billion Point Clouds in Web Browsers',
+    description: 'Visualizing massive LiDAR datasets and photogrammetry point clouds using hierarchical spatial Octrees and GPU point size attenuation.',
+    category: 'Geospatial & Point Clouds',
+    readTime: '13 min read'
+  },
+  {
+    slug: 'offscreencanvas-web-worker-headless-rendering-guide',
+    path: '/offscreencanvas-web-worker-headless-rendering-guide',
+    title: 'Decoupling 3D Rendering Threads with OffscreenCanvas and Web Workers',
+    description: 'Moving high-frequency WebGL and WebGPU draw calls off the main thread to ensure smooth UI responsiveness during complex geometry loads.',
+    category: 'Web Multithreading & Performance',
+    readTime: '11 min read'
+  },
+  {
     slug: 'webgl-msdf-text-rendering-performance-guide',
     path: '/webgl-msdf-text-rendering-performance-guide',
     title: 'Resolution-Independent Vector Text Rendering in WebGL via MSDF',
