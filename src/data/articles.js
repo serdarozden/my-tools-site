@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'realtime-depth-of-field-bokeh-shaders-webgl-guide',
+    path: '/realtime-depth-of-field-bokeh-shaders-webgl-guide',
+    title: 'Implementing Physically-Based Depth of Field and Bokeh Shaders in WebGL',
+    description: 'Simulating realistic camera aperture lens blurs, Circle of Confusion (CoC) maps, and polygonal Bokeh shapes in web-based 3D viewports.',
+    category: 'Post-Processing & Optics',
+    readTime: '12 min read'
+  },
+  {
+    slug: 'spatial-audio-hrtf-web-audio-api-3d-web-guide',
+    path: '/spatial-audio-hrtf-web-audio-api-3d-web-guide',
+    title: 'Architecting 3D Spatial Audio & HRTF Pipelines with Web Audio API',
+    description: 'Synchronizing WebGL camera orientations with directional binaural audio nodes for immersive architectural tours and virtual environments.',
+    category: 'Web Audio & Immersive Media',
+    readTime: '11 min read'
+  },
+  {
+    slug: 'automated-ifc-clash-detection-aabb-obb-webgl-guide',
+    path: '/automated-ifc-clash-detection-aabb-obb-webgl-guide',
+    title: 'High-Speed OpenBIM Clash Detection Architecture: AABB, OBB, and BVH Trees',
+    description: 'Building client-side and serverless spatial clash analysis tools to identify structural and MEP discipline intersections in IFC building models.',
+    category: 'BIM Geometry & Bounding Algorithms',
+    readTime: '13 min read'
+  },
+  {
     slug: 'webgl-screen-space-ambient-occlusion-ssao-hbao-guide',
     path: '/webgl-screen-space-ambient-occlusion-ssao-hbao-guide',
     title: 'Implementing Real-Time SSAO and HBAO+ Pipelines in WebGL Viewports',
