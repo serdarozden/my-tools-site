@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'realtime-webgpu-compute-fluid-simulation-guide',
+    path: '/realtime-webgpu-compute-fluid-simulation-guide',
+    title: 'Real-Time Grid-Based Eulerian Fluid Simulation in WebGPU',
+    description: 'Solving incompressible Navier-Stokes equations and Jacobi pressure projections at 60 FPS using parallel WGSL compute workgroups.',
+    category: 'WebGPU Physics & Fluids',
+    readTime: '13 min read'
+  },
+  {
+    slug: 'screen-space-reflections-ssr-webgl-webgpu-guide',
+    path: '/screen-space-reflections-ssr-webgl-webgpu-guide',
+    title: 'Implementing Screen-Space Reflections (SSR) in Web Rendering Engines',
+    description: 'Generating dynamic Glossy and Mirror reflections on metallic and wet surfaces using screen-space ray marching over G-Buffer depth channels.',
+    category: 'Real-Time Rendering & Optics',
+    readTime: '12 min read'
+  },
+  {
+    slug: 'automated-ifc-structural-load-distribution-analysis-guide',
+    path: '/automated-ifc-structural-load-distribution-analysis-guide',
+    title: 'Automated Structural Load Path Extraction and Analysis in OpenBIM IFC Models',
+    description: 'Extracting spatial structural topology, tributary slab areas, and column axial load transfers directly inside web-based engineering viewers.',
+    category: 'BIM Engineering & Structural Math',
+    readTime: '14 min read'
+  },
+  {
     slug: 'realtime-depth-of-field-bokeh-shaders-webgl-guide',
     path: '/realtime-depth-of-field-bokeh-shaders-webgl-guide',
     title: 'Implementing Physically-Based Depth of Field and Bokeh Shaders in WebGL',
