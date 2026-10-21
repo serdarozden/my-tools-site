@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'screen-space-subsurface-scattering-ssss-webgl-webgpu-guide',
+    path: '/screen-space-subsurface-scattering-ssss-webgl-webgpu-guide',
+    title: 'Real-Time Screen-Space Subsurface Scattering (SSSS) in Web Graphics',
+    description: 'Simulating light transport inside translucent media like skin, marble, jade, and wax using screen-space blur profiles and depth-aware separable kernels.',
+    category: 'Real-Time Rendering & Optics',
+    readTime: '12 min read'
+  },
+  {
+    slug: 'webgpu-compute-driven-nurbs-tessellation-guide',
+    path: '/webgpu-compute-driven-nurbs-tessellation-guide',
+    title: 'Hardware-Accelerated NURBS Surface Tessellation via WebGPU Compute Shaders',
+    description: 'Evaluating non-uniform rational B-spline control meshes dynamically on client GPUs to render smooth curvature without pre-baked static meshes.',
+    category: 'WebGPU & Parametric CAD',
+    readTime: '14 min read'
+  },
+  {
+    slug: 'automated-openbim-building-code-compliance-engine-guide',
+    path: '/automated-openbim-building-code-compliance-engine-guide',
+    title: 'Building Automated Regulatory Code Checking Engines for OpenBIM Models',
+    description: 'Converting municipal planning laws and zoning regulations into computable JavaScript/WASM rule sets evaluated against IFC spatial structures.',
+    category: 'BIM Automation & Regulations',
+    readTime: '13 min read'
+  },
+  {
     slug: 'realtime-webgpu-compute-fluid-simulation-guide',
     path: '/realtime-webgpu-compute-fluid-simulation-guide',
     title: 'Real-Time Grid-Based Eulerian Fluid Simulation in WebGPU',
