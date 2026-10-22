@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'webgpu-ray-traced-soft-shadows-rtss-guide',
+    path: '/webgpu-ray-traced-soft-shadows-rtss-guide',
+    title: 'Implementing Ray-Traced Soft Shadows (RTSS) in WebGPU Viewports',
+    description: 'Simulating physically accurate area light penumbras and soft contact shadows using ray intersection queries and Monte Carlo sampling in WGSL.',
+    category: 'WebGPU Lighting & Ray Tracing',
+    readTime: '13 min read'
+  },
+  {
+    slug: 'webgpu-realtime-cloth-simulation-dynamics-guide',
+    path: '/webgpu-realtime-cloth-simulation-dynamics-guide',
+    title: 'GPU-Accelerated Cloth Simulation & Garment Dynamics via WebGPU Compute',
+    description: 'Simulating textile drape, structural shear, and wind forces for millions of active cloth particles using parallel WGSL compute workgroups.',
+    category: 'WebGPU Physics & Simulation',
+    readTime: '14 min read'
+  },
+  {
+    slug: 'automated-ifc-space-spatial-quantity-takeoff-guide',
+    path: '/automated-ifc-space-spatial-quantity-takeoff-guide',
+    title: 'Automated Spatial Analysis and Quantity Takeoff (QTO) in OpenBIM IFC',
+    description: 'Extracting net floor areas, room boundary volumes, and bill of quantities (BOQ) automatically from architectural IFC building models.',
+    category: 'BIM Data & Quantity Takeoff',
+    readTime: '12 min read'
+  },
+  {
     slug: 'screen-space-subsurface-scattering-ssss-webgl-webgpu-guide',
     path: '/screen-space-subsurface-scattering-ssss-webgl-webgpu-guide',
     title: 'Real-Time Screen-Space Subsurface Scattering (SSSS) in Web Graphics',
