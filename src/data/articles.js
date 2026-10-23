@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'realtime-webgpu-fft-ocean-wave-rendering-guide',
+    path: '/realtime-webgpu-fft-ocean-wave-rendering-guide',
+    title: 'Real-Time FFT Ocean Simulation and Wave Generation in WebGPU',
+    description: 'Evaluating Phillips and Tessendorf wave spectra using parallel 2D Fast Fourier Transform (FFT) passes in WGSL compute workgroups.',
+    category: 'WebGPU Physics & Oceans',
+    readTime: '14 min read'
+  },
+  {
+    slug: 'screen-space-refraction-volumetric-god-rays-webgl-guide',
+    path: '/screen-space-refraction-volumetric-god-rays-webgl-guide',
+    title: 'Implementing Screen-Space Refraction and Volumetric Light Shafts in WebGL',
+    description: 'Simulating chromatic light distortion across glass media and crepuscular light rays in dusty atmospheric interior CAD viewports.',
+    category: 'Atmospherics & Optics',
+    readTime: '12 min read'
+  },
+  {
+    slug: 'automated-openbim-fire-safety-evacuation-analysis-guide',
+    path: '/automated-openbim-fire-safety-evacuation-analysis-guide',
+    title: 'Automated Fire Safety and Life Safety Evacuation Analysis in OpenBIM IFC',
+    description: 'Evaluating egress walking distances, exit capacity bottlenecks, and fire resistance rating property sets directly inside browser-based BIM tools.',
+    category: 'BIM Safety & Regulations',
+    readTime: '13 min read'
+  },
+  {
     slug: 'webgpu-ray-traced-soft-shadows-rtss-guide',
     path: '/webgpu-ray-traced-soft-shadows-rtss-guide',
     title: 'Implementing Ray-Traced Soft Shadows (RTSS) in WebGPU Viewports',
