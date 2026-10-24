@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'realtime-webgpu-cloth-tearing-fracture-simulation-guide',
+    path: '/realtime-webgpu-cloth-tearing-fracture-simulation-guide',
+    title: 'GPU-Accelerated Cloth Tearing and Dynamic Mesh Fracture in WebGPU',
+    description: 'Simulating structural strain limits, dynamic edge removal, and runtime index buffer modification using parallel WGSL compute passes.',
+    category: 'WebGPU Physics & Destruction',
+    readTime: '14 min read'
+  },
+  {
+    slug: 'volumetric-fog-cloud-ray-marching-webgl-guide',
+    path: '/volumetric-fog-cloud-ray-marching-webgl-guide',
+    title: 'Implementing Volumetric Fog and Atmospheric Clouds in Web Graphics',
+    description: 'Simulating heterogenous fog density fields, Beer-Lambert light extinction, and 3D noise ray marching for immersive architectural environments.',
+    category: 'Atmospherics & Volumetrics',
+    readTime: '13 min read'
+  },
+  {
+    slug: 'automated-openbim-building-acoustic-analysis-guide',
+    path: '/automated-openbim-building-acoustic-analysis-guide',
+    title: 'Automated Room Acoustics and Reverberation Time (RT60) Analysis in OpenBIM',
+    description: 'Extracting room enclosure surface areas, material sound absorption coefficients, and airborne noise isolation metrics directly from IFC spatial entities.',
+    category: 'BIM Acoustics & Simulations',
+    readTime: '12 min read'
+  },
+  {
     slug: 'realtime-webgpu-fft-ocean-wave-rendering-guide',
     path: '/realtime-webgpu-fft-ocean-wave-rendering-guide',
     title: 'Real-Time FFT Ocean Simulation and Wave Generation in WebGPU',
