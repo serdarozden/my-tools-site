@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'realtime-webgpu-rigid-body-physics-simulation-guide',
+    path: '/realtime-webgpu-rigid-body-physics-simulation-guide',
+    title: 'GPU-Accelerated Rigid Body Physics Simulation via WebGPU Compute',
+    description: 'Solving impulse-based collision responses and rotational momentum equations for thousands of active rigid bodies in parallel WGSL compute workgroups.',
+    category: 'WebGPU Physics & Collisions',
+    readTime: '14 min read'
+  },
+  {
+    slug: 'high-performance-bloom-lens-flare-webgl-guide',
+    path: '/high-performance-bloom-lens-flare-webgl-guide',
+    title: 'Optimizing Bloom and Anamorphic Lens Flare Passes in WebGL',
+    description: 'Implementing energy-conserving dual-kawase downsampling and bright-pass threshold filters for cinematic lighting effects in 3D web applications.',
+    category: 'Post-Processing & Shaders',
+    readTime: '11 min read'
+  },
+  {
+    slug: 'automated-openbim-energy-efficiency-thermal-analysis-guide',
+    path: '/automated-openbim-energy-efficiency-thermal-analysis-guide',
+    title: 'Automated Building Energy Efficiency and Thermal Performance Analysis in OpenBIM',
+    description: 'Extracting thermal transmittance (U-values), material layer properties, and window-to-wall ratios automatically from IFC building models.',
+    category: 'BIM Energy & Sustainability',
+    readTime: '13 min read'
+  },
+  {
     slug: 'realtime-webgpu-cloth-tearing-fracture-simulation-guide',
     path: '/realtime-webgpu-cloth-tearing-fracture-simulation-guide',
     title: 'GPU-Accelerated Cloth Tearing and Dynamic Mesh Fracture in WebGPU',
