@@ -1,5 +1,29 @@
 export const articles = [
  {
+    slug: 'gpu-driven-terrain-rendering-quadtree-lod-webgpu-guide',
+    path: '/gpu-driven-terrain-rendering-quadtree-lod-webgpu-guide',
+    title: 'GPU-Driven Terrain Rendering and Quadtree LOD Management in WebGPU',
+    description: 'Rendering massive open-world geospatial elevation maps at 60 FPS using dynamic clipmaps and parallel compute-driven quadtree subdivision.',
+    category: 'WebGPU Terrains & LOD',
+    readTime: '14 min read'
+  },
+  {
+    slug: 'clustered-forward-shading-multi-light-atlasing-guide',
+    path: '/clustered-forward-shading-multi-light-atlasing-guide',
+    title: 'Clustered Forward Shading and Multi-Light Atlasing in WebGPU',
+    description: 'Overcoming traditional forward rendering limits to illuminate complex architectural interiors with hundreds of dynamic point and spot lights simultaneously.',
+    category: 'WebGPU Lighting Architecture',
+    readTime: '13 min read'
+  },
+  {
+    slug: 'automated-ifc-hvac-duct-pipe-sizing-analysis-guide',
+    path: '/automated-ifc-hvac-duct-pipe-sizing-analysis-guide',
+    title: 'Automated HVAC Duct and Pipe Network Sizing Analysis in OpenBIM IFC',
+    description: 'Extracting MEP flow rates, calculating frictional pressure drops, and auditing duct dimensions automatically from architectural IFC building models.',
+    category: 'BIM MEP Engineering & Hydraulics',
+    readTime: '13 min read'
+  },
+  {
     slug: 'realtime-webgpu-rigid-body-physics-simulation-guide',
     path: '/realtime-webgpu-rigid-body-physics-simulation-guide',
     title: 'GPU-Accelerated Rigid Body Physics Simulation via WebGPU Compute',
