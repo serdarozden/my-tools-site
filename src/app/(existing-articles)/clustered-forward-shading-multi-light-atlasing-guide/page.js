@@ -1,5 +1,3 @@
-import Link from 'next/link'; // wait, use Link from 'next/link'
-
 import Link from 'next/link';
 
 export const metadata = {
