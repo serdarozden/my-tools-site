@@ -1,4 +1,4 @@
-import Link from 'net/link'; // wait, use Link from 'next/link'
+import Link from 'next/link'; // wait, use Link from 'next/link'
 
 import Link from 'next/link';
 
