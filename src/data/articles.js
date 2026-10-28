@@ -1,5 +1,30 @@
 export const articles = [
- {
+ 
+{
+  slug: 'webassembly-vs-webgpu-engineering-computing-guide',
+  path: '/webassembly-vs-webgpu-engineering-computing-guide',
+  title: 'WebAssembly vs. WebGPU for High-Performance Engineering Applications',
+  description: 'Compare WebAssembly and WebGPU for browser-based CAD, engineering computation, parallel processing, and hybrid CPU-GPU architectures.',
+  category: 'WebAssembly & GPU Computing',
+  readTime: '12 min read'
+},
+{
+  slug: 'ifc-ids-information-delivery-specification-bim-guide',
+  path: '/ifc-ids-information-delivery-specification-bim-guide',
+  title: 'IFC IDS Guide: Automating BIM Information Requirements and Model Validation',
+  description: 'Learn how IDS defines machine-readable BIM requirements and validates IFC properties, classifications, and information completeness.',
+  category: 'OpenBIM & IFC Validation',
+  readTime: '13 min read'
+},
+{
+  slug: 'step-ap242-pmi-model-based-definition-cad-guide',
+  path: '/step-ap242-pmi-model-based-definition-cad-guide',
+  title: 'STEP AP242, PMI and Model-Based Definition: A CAD Interoperability Guide',
+  description: 'Explore STEP AP242, product manufacturing information, GD&T, semantic tolerances, and model-based definition workflows.',
+  category: 'CAD Interoperability & Manufacturing',
+  readTime: '12 min read'
+},
+{
     slug: 'gpu-driven-terrain-rendering-quadtree-lod-webgpu-guide',
     path: '/gpu-driven-terrain-rendering-quadtree-lod-webgpu-guide',
     title: 'GPU-Driven Terrain Rendering and Quadtree LOD Management in WebGPU',
