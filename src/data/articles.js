@@ -1,6 +1,33 @@
 export const articles = [
  
 {
+  slug: 'autocad-xrefs-external-references-guide',
+  path: '/autocad-xrefs-external-references-guide',
+  title: 'AutoCAD Xrefs Explained: Attach, Overlay, Bind and Fix Paths',
+  description:
+    'Learn how AutoCAD external references (Xrefs) work. Compare Attach vs Overlay, Bind vs Insert, relative paths, and common Xref troubleshooting methods.',
+  category: 'AutoCAD',
+  readTime: '8 min read',
+},
+{
+  slug: 'revit-worksets-worksharing-central-local-model-guide',
+  path: '/revit-worksets-worksharing-central-local-model-guide',
+  title: 'Revit Worksets and Worksharing: Central vs Local Models',
+  description:
+    'Understand Revit worksets, central and local models, Synchronize with Central, ownership, relinquishing and common worksharing problems.',
+  category: 'BIM & Revit',
+  readTime: '8 min read',
+},
+{
+  slug: 'convert-pdf-to-dwg-vector-raster-autocad-guide',
+  path: '/convert-pdf-to-dwg-vector-raster-autocad-guide',
+  title: 'Convert PDF to DWG in AutoCAD: Vector vs Raster PDF',
+  description:
+    'Learn how to convert PDF to DWG using AutoCAD PDFIMPORT. Understand vector and scanned raster PDFs, OCR limitations, scale accuracy and cleanup.',
+  category: 'CAD & File Conversion',
+  readTime: '8 min read',
+},
+{
   slug: 'webassembly-vs-webgpu-engineering-computing-guide',
   path: '/webassembly-vs-webgpu-engineering-computing-guide',
   title: 'WebAssembly vs. WebGPU for High-Performance Engineering Applications',
