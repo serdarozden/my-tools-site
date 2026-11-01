@@ -1,6 +1,30 @@
 export const articles = [
  
 {
+    slug: 'webgpu-clustered-forward-shading-multi-light-guide',
+    path: '/webgpu-clustered-forward-shading-multi-light-guide',
+    title: 'WebGPU Clustered Forward Shading Multi-Light Architecture',
+    description: 'Learn how to implement tile and cluster-based forward rendering pipelines in WebGPU to handle thousands of simultaneous dynamic lights efficiently.',
+    category: 'WebGPU Rendering Shaders',
+    readTime: '15 min read'
+  },
+  {
+    slug: 'automated-ifc-structural-staircase-accessibility-code-compliance-guide',
+    path: '/automated-ifc-structural-staircase-accessibility-code-compliance-guide',
+    title: 'Automated IFC Staircase Geometry and Accessibility Code Compliance',
+    description: 'Validating architectural stair risers, tread dimensions, handrail heights, and TS 9111 / ADA handicap ramp slopes programmatically from IFC building models.',
+    category: 'OpenBIM Code Compliance',
+    readTime: '13 min read'
+  },
+  {
+    slug: 'nextjs-react-server-components-streaming-3d-binary-buffers',
+    path: '/nextjs-react-server-components-streaming-3d-binary-buffers',
+    title: 'Streaming Large 3D Binary Buffers with Next.js React Server Components',
+    description: 'Optimizing web 3D asset delivery by streaming large GLTF/GLB binary buffers and CAD geometry chunks using React Server Components (RSC).',
+    category: 'Next.js & Web 3D Architecture',
+    readTime: '14 min read'
+  },
+  {
   slug: 'autocad-xrefs-external-references-guide',
   path: '/autocad-xrefs-external-references-guide',
   title: 'AutoCAD Xrefs Explained: Attach, Overlay, Bind and Fix Paths',
