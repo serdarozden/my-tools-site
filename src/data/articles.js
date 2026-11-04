@@ -1,6 +1,30 @@
 export const articles = [
  
-{
+  {
+    slug: 'webgpu-gpu-driven-occlusion-culling-guide',
+    path: '/webgpu-gpu-driven-occlusion-culling-guide',
+    title: 'WebGPU GPU-Driven Occlusion Culling and Hi-Z Pipeline Architecture',
+    description: 'Learn how to implement Hierarchical-Z (Hi-Z) buffer generation and compute shader-based occlusion culling in WebGPU for massive 3D scenes.',
+    category: 'WebGPU Occlusion Culling',
+    readTime: '16 min read'
+  },
+  {
+    slug: 'automated-ifc-structural-seismic-drift-analysis-guide',
+    path: '/automated-ifc-structural-seismic-drift-analysis-guide',
+    title: 'Automated IFC Structural Seismic Story Drift Analysis Architecture',
+    description: 'Extracting lateral displacement matrices and computing inter-story drift ratios automatically from structural analysis properties embedded in IFC building models.',
+    category: 'OpenBIM Seismic Analysis',
+    readTime: '15 min read'
+  },
+  {
+    slug: 'nextjs-app-router-isr-on-demand-revalidation-3d-assets',
+    path: '/nextjs-app-router-isr-on-demand-revalidation-3d-assets',
+    title: 'Next.js App Router On-Demand ISR and Tag-Based 3D Asset Revalidation',
+    description: 'Keeping large static 3D model catalogs instantly synchronized with database updates using Next.js on-demand Incremental Static Regeneration and cache tags.',
+    category: 'Next.js ISR Architecture',
+    readTime: '14 min read'
+  },
+  {
     slug: 'webgpu-clustered-forward-shading-multi-light-guide',
     path: '/webgpu-clustered-forward-shading-multi-light-guide',
     title: 'WebGPU Clustered Forward Shading Multi-Light Architecture',
