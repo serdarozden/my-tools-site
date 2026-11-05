@@ -1,6 +1,33 @@
 export const articles = [
  
   {
+  slug: 'autocad-dynamic-blocks-parametric-blocks-guide',
+  path: '/autocad-dynamic-blocks-parametric-blocks-guide',
+  title: 'AutoCAD Dynamic Blocks: Parameters, Actions and Visibility States',
+  description:
+    'Learn how to create AutoCAD dynamic blocks using parameters, actions, visibility states, lookup tables and attributes for reusable CAD components.',
+  category: 'AutoCAD',
+  readTime: '8 min read',
+},
+{
+  slug: 'revit-schedules-quantity-takeoff-cost-estimation-guide',
+  path: '/revit-schedules-quantity-takeoff-cost-estimation-guide',
+  title: 'Revit Schedules: Quantity Takeoff, Materials and Cost Estimation',
+  description:
+    'Learn how to create Revit schedules and quantity takeoffs. Explore calculated values, material schedules, filters, sorting and construction cost workflows.',
+  category: 'BIM & Revit',
+  readTime: '8 min read',
+},
+{
+  slug: 'retaining-wall-design-earth-pressure-stability-guide',
+  path: '/retaining-wall-design-earth-pressure-stability-guide',
+  title: 'Retaining Wall Design: Earth Pressure, Sliding and Overturning',
+  description:
+    'Understand retaining wall design calculations, Rankine and Coulomb earth pressure, sliding, overturning, bearing capacity and drainage requirements.',
+  category: 'Structural Engineering',
+  readTime: '9 min read',
+},
+{
     slug: 'webgpu-gpu-driven-occlusion-culling-guide',
     path: '/webgpu-gpu-driven-occlusion-culling-guide',
     title: 'WebGPU GPU-Driven Occlusion Culling and Hi-Z Pipeline Architecture',
