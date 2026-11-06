@@ -1,6 +1,34 @@
 export const articles = [
  
-  {
+  
+{
+  slug: 'autocad-sheet-set-manager-project-publishing-guide',
+  path: '/autocad-sheet-set-manager-project-publishing-guide',
+  title: 'AutoCAD Sheet Set Manager: Complete Project Organization and PDF Publishing Guide',
+  description:
+    'Learn how to organize AutoCAD drawing sheets with Sheet Set Manager. Configure sheet sets, title blocks, fields, page setups and automated PDF publishing.',
+  category: 'AutoCAD',
+  readTime: '10 min read',
+},
+{
+  slug: 'revit-design-options-phasing-workflow-guide',
+  path: '/revit-design-options-phasing-workflow-guide',
+  title: 'Revit Design Options and Phasing: Managing Design Alternatives and Construction Stages',
+  description:
+    'Learn how to use Revit Design Options and Phasing to manage alternative layouts, renovation stages, existing conditions and construction documentation.',
+  category: 'BIM & Revit',
+  readTime: '10 min read',
+},
+{
+  slug: 'ifc-georeferencing-coordinate-systems-epsg-guide',
+  path: '/ifc-georeferencing-coordinate-systems-epsg-guide',
+  title: 'IFC Georeferencing: Coordinate Systems, EPSG Codes and Real-World BIM Alignment',
+  description:
+    'Understand IFC georeferencing, IfcProjectedCRS, IfcMapConversion, EPSG codes and coordinate transformations for accurate BIM and GIS interoperability.',
+  category: 'OpenBIM & GIS',
+  readTime: '12 min read',
+},
+{
   slug: 'autocad-dynamic-blocks-parametric-blocks-guide',
   path: '/autocad-dynamic-blocks-parametric-blocks-guide',
   title: 'AutoCAD Dynamic Blocks: Parameters, Actions and Visibility States',
