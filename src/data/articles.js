@@ -1,6 +1,32 @@
 export const articles = [
  
-  
+  {
+  slug: 'revit-shared-parameters-nested-families-guide',
+  path: '/revit-shared-parameters-nested-families-guide',
+  title: 'Revit Shared Parameters and Nested Families: A Complete BIM Workflow',
+  description:
+    'Learn how to create Revit shared parameters, build nested families, manage parameter associations and standardize BIM family data.',
+  category: 'BIM & Revit',
+  readTime: '11 min read',
+},
+{
+  slug: 'autocad-annotative-scaling-text-dimensions-blocks-guide',
+  path: '/autocad-annotative-scaling-text-dimensions-blocks-guide',
+  title: 'AutoCAD Annotative Scaling: A Complete Guide to Text, Dimensions and Blocks',
+  description:
+    'Learn how AutoCAD annotative scaling works for text, dimensions, blocks and hatches across multiple viewport scales.',
+  category: 'AutoCAD',
+  readTime: '10 min read',
+},
+{
+  slug: 'punching-shear-flat-slab-design-calculation-guide',
+  path: '/punching-shear-flat-slab-design-calculation-guide',
+  title: 'Punching Shear Design of Flat Slabs: Critical Perimeters, Calculations and Reinforcement',
+  description:
+    'Understand punching shear in flat slabs, critical control perimeters, column reactions, eccentricity effects and reinforcement design checks.',
+  category: 'Structural Engineering',
+  readTime: '12 min read',
+},
 {
   slug: 'autocad-sheet-set-manager-project-publishing-guide',
   path: '/autocad-sheet-set-manager-project-publishing-guide',
