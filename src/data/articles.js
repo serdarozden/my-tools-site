@@ -1,6 +1,33 @@
 export const articles = [
  
   {
+  slug: 'revit-phasing-design-options-workflow-guide',
+  path: '/revit-phasing-design-options-workflow-guide',
+  title: 'Revit Phasing and Design Options: A Complete BIM Workflow',
+  description:
+    'Learn how to manage existing, demolished and new construction elements in Revit, configure phase filters, create design options and coordinate renovation workflows.',
+  category: 'BIM & Revit',
+  readTime: '12 min read',
+},
+{
+  slug: 'autocad-sheet-set-manager-publishing-workflow-guide',
+  path: '/autocad-sheet-set-manager-publishing-workflow-guide',
+  title: 'AutoCAD Sheet Set Manager: A Complete Drawing Publishing Workflow',
+  description:
+    'Build a structured drawing package with sheet sets, subsets, automated title block fields, sheet numbering and batch publishing.',
+  category: 'AutoCAD',
+  readTime: '11 min read',
+},
+{
+  slug: 'reinforced-concrete-beam-deflection-serviceability-guide',
+  path: '/reinforced-concrete-beam-deflection-serviceability-guide',
+  title: 'Reinforced Concrete Beam Deflection: Calculation, Cracking and Long-Term Effects',
+  description:
+    'Understand how concrete cracking, effective stiffness, creep and shrinkage influence beam deformation under service loads.',
+  category: 'Structural Engineering',
+  readTime: '13 min read',
+},
+{
   slug: 'revit-shared-parameters-nested-families-guide',
   path: '/revit-shared-parameters-nested-families-guide',
   title: 'Revit Shared Parameters and Nested Families: A Complete BIM Workflow',
